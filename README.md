@@ -1,7 +1,4 @@
-
-<p align="center" style="margin-top:1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.74 155.74" width="100" height="100"><defs><style>.cls-1{fill:#003b71;}.cls-2{fill:#7daed3;}</style></defs><title>icon-gsaforce</title><g id="Capa_2" data-name="Capa 2"><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="134.12 134.1 21.64 134.1 21.64 21.61 66.34 21.61 66.34 0 0 0 0 155.74 155.74 155.74 155.74 91.47 134.12 91.47 134.12 134.1"/><polygon class="cls-2" points="87.95 0 87.95 21.61 118.77 21.61 71.03 69.38 86.78 85.1 134.12 37.76 134.12 69.94 155.74 69.94 155.74 0 87.95 0"/></g></g></svg></p>
-
-<p align="center">
+<p align="center" style="margin-top:1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.74 155.74" width="100" height="100"><defs><style>.cls-1{fill:#003b71;}.cls-2{fill:#7daed3;}</style></defs><title>icon-gsaforce</title><g id="Capa_2" data-name="Capa 2"><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="134.12 134.1 21.64 134.1 21.64 21.61 66.34 21.61 66.34 0 0 0 0 155.74 155.74 155.74 155.74 91.47 134.12 91.47 134.12 134.1"/><polygon class="cls-2" points="87.95 0 87.95 21.61 118.77 21.61 71.03 69.38 86.78 85.1 134.12 37.76 134.12 69.94 155.74 69.94 155.74 0 87.95 0"/></g></g></svg></p><p align="center">
 	<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white">
 		<img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white"><img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square">
 		<img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat-square&logo=bootstrap&logoColor=white">
