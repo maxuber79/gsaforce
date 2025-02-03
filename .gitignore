@@ -1,0 +1,22 @@
+# Archivos específicos
+readme.txt
+LICENSE
+composer.json
+.stylelintrc.json
+package.json
+phpcs.xml.dist
+.eslintrc
+# Rutas específicas
+readme.txt
+LICENSE
+composer.json
+.stylelintrc.json
+package.json
+phpcs.xml.dist
+.eslintrc
+/assets/js/prepros.config
+/assets/scss/prepros.config
+/assets/prepros.config
+/respaldo
+/assets/lib/*
+/assets/scss/*
