@@ -20,3 +20,4 @@ phpcs.xml.dist
 /respaldo
 /assets/lib/*
 /assets/scss/*
+guideline.html
