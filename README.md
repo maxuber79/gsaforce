@@ -12,15 +12,14 @@
 </p>
 
 # Link demo
-vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)
+👉 vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)
 
 # Starter Theme GSAForce HTML
-El theme es confeccionado en el 2025 es exclusivo, centrado en una web con sidebar menú y top navbar menu, se utiliza iconografías para el despliegue del menú y un buscador para que el usuario encuentre lo que busca en el sitio. El sitio está diseñado para entregar información de la empresa en sus operaciones. Sus secciones e interacciones con la información son visualizados en su dashboard o modales desplegables y se pueden ejecutar desde cualquier dispositivo (Moble, Tablet, Desktop); las secciones en su mayoría ocupan full height en el viewport de cualquier dispositivo.
+El theme es confeccionado en el 2025 es exclusivo, centrado en una web con sidebar menú y top navbar menu, se utiliza iconografías para el despliegue del menú y un buscador para que el usuario encuentre lo que busca en el sitio. La App está diseñado para entregar información de la empresa en sus operaciones y posibilidad de generar documentos. Sus secciones e interacciones con la información son visualizados en su dashboard por medio de tablas, tabs o modales desplegables y se pueden ejecutar desde cualquier dispositivo (Moble, Tablet, Desktop); las secciones en su mayoría ocupan full height en el viewport de cualquier dispositivo.
 
 Las interiores poseen un diseño minimalista y personalizada, con una lectura visual centrada en todos los disposotivos con un ancho maximo de un 90% en el viewport del dashboard.  
 
 La tipografía es de GoogleFonts “Karla” y sencilla, es legible en una gran variedad de tamaños de pantalla y es adecuada para múltiples idiomas. 
-
 
 ## === GSAForce ===
 - **`Theme Name:`** GSAForce
@@ -44,7 +43,7 @@ cmunozm ( [@mmaxuber79](https://github.com/maxuber79) / [webmain.cl](http://webm
 
 ## Summary
 
-Theme de HTML para usar como plantilla inicial para crear temas personalizados en Angular. Utiliza SCSS y AutoPrefixr, HTML5 con Modernizr y Normalize.css y Bootstrap para todas las tareas de procesamiento. Sincroniza los cambios entre dispositivos de desarrollo local con BrowserSync.  
+Theme de HTML para usar como plantilla inicial para crear temas personalizados en Angular. Utiliza CSS/SCSS, AutoPrefixr, HTML5, JavaScript, Jquery, Modernizr y Bootstrap última versión, para todas las tareas de procesamiento. Sincroniza los cambios entre dispositivos de desarrollo local con BrowserSync.  
 
 
 ### Bower
@@ -72,11 +71,12 @@ Admite [bower](https://github.com/bower/bower) para instalar y administrar depen
 Sin las siguiente librerias, el theme inicial HTML no podría operar.
 
 * [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-* [Bootstrap icons](https://icons.getbootstrap.com/)
-* [Jquery v3.4](https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?ver=3.7.1)
+* [Bootstrap icons](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css)
+* [Jquery v3.7](https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?ver=3.7.1)
 * [Jquery migrate v3.4.1](https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js?ver=3.4.1)
 * [Smooth scroll v1.4.10](https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?ver=1.4.10)
 * [AOSjs v2.3](http://localhost/elev/wp-content/themes/elev/assets/lib/aos/aos.js?ver=2.3.1)
  
 
-¡Buena suerte!
+¡Buena suerte ✌️!
+ 
