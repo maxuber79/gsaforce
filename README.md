@@ -12,14 +12,14 @@
 </p>
 
 # Link demo
-vistar demo: [link demo](https://maxuber79.github.io/gsaforce/dashboard.html )
+vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)
 
 # Starter Theme GSAForce HTML
 El theme es confeccionado en el 2025 es exclusivo, centrado en una web con sidebar menú y top navbar menu, se utiliza iconografías para el despliegue del menú y un buscador para que el usuario encuentre lo que busca en el sitio. El sitio está diseñado para entregar información de la empresa en sus operaciones. Sus secciones e interacciones con la información son visualizados en su dashboard o modales desplegables y se pueden ejecutar desde cualquier dispositivo (Moble, Tablet, Desktop); las secciones en su mayoría ocupan full height en el viewport de cualquier dispositivo.
 
 Las interiores poseen un diseño minimalista y personalizada, con una lectura visual centrada en todos los disposotivos con un ancho maximo de un 90% en el viewport del dashboard.  
 
-La tipografía es de GoogleFonts “XXXX” y sencilla, es legible en una gran variedad de tamaños de pantalla y es adecuada para múltiples idiomas. 
+La tipografía es de GoogleFonts “Karla” y sencilla, es legible en una gran variedad de tamaños de pantalla y es adecuada para múltiples idiomas. 
 
 
 ## === GSAForce ===
