@@ -21,3 +21,5 @@ phpcs.xml.dist
 /assets/lib/*
 /assets/scss/*
 guideline.html
+disenos/*
+disenos
