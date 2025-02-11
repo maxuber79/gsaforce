@@ -21,15 +21,15 @@
 </head>
 
 <body>
-	<main id="main-login" class="position-relative overflow-hidden min-vh-100 w-100">
-		<div class="container-fluid min-vh-100 w-100 p-0">
+	<main id="main-login" class="position-relative overflow-hidden min-vh-100 mw-100">
+		<div id="border-1" class="container-fluid p-0">
 			<div class="row g-0">
-				<div class="col-sm-12 col-md-6 col-lg-6 d-none d-sm-block position-relative login-left">
+				<div class="col-sm-12 col-md-6 col-lg-6 d-none d-sm-block position-relative login-left bg-dark">
 					<img src="./assets/images/gsaforce_about.jpg" alt="login image" class="login-img">					
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center min-vh-100 position-relative login-right">
-						<img src="./assets/images/arrow.png" alt="login image" class="arrow-img position-absolute bottom-0 start-0">
-						<main class="form-signin w-100 m-auto">						
+				<div class="col-sm-12 col-md-6 col-lg-6 position-relative d-flex align-items-center login-right min-vh-100">
+						<img src="./assets/images/arrow.png" alt="login image" class="arrow-img position-absolute">
+						<div class="form-signin w-100 m-auto">						
 							<form id="loginForm" class="needs-validation" novalidate>
 								<img class="icono-logo" src="./assets/images/icon-gsaforce.svg" alt="" width="72" height="57">
 								<h1 class="title-login">Welcome</h1>
@@ -50,18 +50,24 @@
 										Please enter your password.
 									</div>
 								</div>
-								<!-- Checkbox y enlace -->
-								<div class="form-check text-start my-4 d-flex justify-content-between">
-									<span class="remember">
-										<input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-										<label class="form-check-label" for="flexCheckDefault">Remember me</label>
-									</span>
-									<a href="#" class="forgot text-start">Forgot your password?</a>
-								</div>						
+
+								<div class="row my-3">
+									<div class="col-12 d-flex justify-content-between align-items-center">
+										<div class="form-check remember text-start">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+											<label class="form-check-label" for="flexCheckDefault">Remember me</label>
+										</div>
+										<div class="form-link">
+											<a href="#" class="forgot text-start">Forgot your password?</a>
+										</div>
+									</div>
+										
+								</div>										
+												
 								<!-- Botón -->
 								<button class="btn btn-full gsa-primary w-100 py-2" type="submit">SIGN IN</button>
 							</form>
-						</main>
+						</div>
 						<p class="text-center flex-grow align-self-end footer-link">© 2025 GSA Force. All rights reserved, from <a href="#" target="_blank" class="link-text">gsaforce.com</a></p>
 				</div>
 			</div>
