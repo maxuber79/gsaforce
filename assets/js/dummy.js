@@ -215,7 +215,7 @@ function loadTable() {
 	const dataDummy = 'https://github.com/maxuber79/gsaforce/blob/main/assets/dummy/data-flight.json';
 	let dataLocal = 'assets/dummy/data-flight.json';
 	if (!data) {
-		fetch(dataDummy)
+		fetch('https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json')
 			.then(response => response.json())
 			.then(jsonData => {
 				localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
