@@ -212,10 +212,10 @@ function openDeleteModal(event) {
 // Función para cargar datos (desde LocalStorage o JSON)
 function loadTable() {
 	let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
-	const dataDummy = 'https://github.com/maxuber79/gsaforce/blob/main/assets/dummy/data-flight.json';
+	const dataDummy = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
 	let dataLocal = 'assets/dummy/data-flight.json';
 	if (!data) {
-		fetch('https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json')
+		fetch(dataDummy)
 			.then(response => response.json())
 			.then(jsonData => {
 				localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
