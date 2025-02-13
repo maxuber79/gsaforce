@@ -22,3 +22,11 @@ phpcs.xml.dist
 guideline.html
 disenos/*
 disenos
+
+# Pages
+blank.html
+tables.html
+tabs.html
+typography.html
+forms-elements.html
+buttons.html

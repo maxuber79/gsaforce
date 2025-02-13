@@ -1,0 +1,114 @@
+[
+    {
+        "flightNumber": "LA402",
+        "airline": "LATAM Airlines",
+        "destination": "Santiago, Chile",
+        "departure": "2024-06-10T12:30",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "AA123",
+        "airline": "American Airlines",
+        "destination": "Miami, USA",
+        "departure": "2024-06-10T15:15",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "IB6050",
+        "airline": "Iberia",
+        "destination": "Madrid, Spain",
+        "departure": "2024-06-10T19:45",
+        "status": "Cancelled",
+        "statusClass": "text-bg-danger"
+    },
+    {
+        "flightNumber": "AF345",
+        "airline": "Air France",
+        "destination": "Paris, France",
+        "departure": "2024-06-10T10:00",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "DL789",
+        "airline": "Delta Airlines",
+        "destination": "New York, USA",
+        "departure": "2024-06-11T08:30",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "BA256",
+        "airline": "British Airways",
+        "destination": "London, UK",
+        "departure": "2024-06-11T14:50",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "EK202",
+        "airline": "Emirates",
+        "destination": "Dubai, UAE",
+        "departure": "2024-06-12T21:15",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "LH404",
+        "airline": "Lufthansa",
+        "destination": "Frankfurt, Germany",
+        "departure": "2024-06-12T17:45",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "QR707",
+        "airline": "Qatar Airways",
+        "destination": "Doha, Qatar",
+        "departure": "2024-06-13T23:30",
+        "status": "Cancelled",
+        "statusClass": "text-bg-danger"
+    },
+    {
+        "flightNumber": "CX888",
+        "airline": "Cathay Pacific",
+        "destination": "Hong Kong",
+        "departure": "2024-06-14T06:00",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "SQ305",
+        "airline": "Singapore Airlines",
+        "destination": "Singapore",
+        "departure": "2024-06-14T12:10",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "AM112",
+        "airline": "Aeroméxico",
+        "destination": "Mexico City, Mexico",
+        "departure": "2024-06-15T09:25",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "AV221",
+        "airline": "Avianca",
+        "destination": "Bogotá, Colombia",
+        "departure": "2024-06-15T18:40",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "QF787",
+        "airline": "Qantas",
+        "destination": "Sydney, Australia",
+        "departure": "2024-06-16T22:55",
+        "status": "Cancelled",
+        "statusClass": "text-bg-danger"
+    }
+]
