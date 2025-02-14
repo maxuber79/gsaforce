@@ -16,6 +16,8 @@
 
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
 		<link rel="stylesheet" href="./assets/lib/feather/feather.css">
 		<link rel="stylesheet" href="./assets/lib/themify-icons/themify-icons.css">
 		<link rel="stylesheet" href="./assets/css/fontawesome-5.15.4/css/fontawesome.min.css">
@@ -339,7 +341,7 @@
 						<div class="col-12 grid-margin stretch-card">
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Basic Tab</h4>
+									<h4 class="card-title">Basic Tab </h4>
 									<p class="card-description">Horizontal bootstrap tab</p>
 									<ul class="nav nav-tabs tabs-primary" role="tablist">
 										<li class="nav-item" role="presentation">
@@ -520,6 +522,34 @@
 
 
 					<div class="row">
+						<div class="col-12">
+							<div class="col-12 grid-margin">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title">Striped Data Table</h4>
+										<p class="card-description">Add class <code>.table-striped</code> for table</p>
+										<div class="row">
+											<div class="table-sorter-wrapper col-lg-12 table-responsive">
+												<table id="sortable-table-2" class="table table-striped">
+													<thead>
+														<tr>
+															<th class="sortStyle">#</th>
+															<th class="sortStyle">Flight Number</th>
+															<th class="sortStyle">Airline</th>
+															<th class="sortStyle">Destination</th>
+															<th class="sortStyle">Departure</th>
+															<th class="sortStyle">Status</th>
+														</tr>
+													</thead>
+													<tbody id="flight-data-2"></tbody> <!-- Aquí se agregarán las filas dinámicamente -->
+												</table>
+							
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="col-lg-6 grid-margin stretch-card">
 							<div class="card">
 								<div class="card-body">
@@ -1701,9 +1731,14 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/off-camvas.js"></script>
 	<script src="./assets/js/settings.js"></script>
-	<script src="./assets/js/template.js"></script>
-	<script src="./assets/js/dummy.js"></script>
+	<script src="./assets/js/template.js"></script> 
 	<script src="./assets/js/dashboard.js"></script>
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+	<script src="./assets/js/dummy-datatable.js"></script>
+	<script src="./assets/lib/sortable/tablesorter.js"></script>
+	<script src="./assets/js/dummy.js"></script>
+	<script src="./assets/js/dummy-table-sorter.js"></script>
 </body>
 
 </html>
