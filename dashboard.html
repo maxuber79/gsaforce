@@ -452,14 +452,15 @@
 											
 										</div>
 										
+
+										<!-- ESTE ES EL QUE ESTOY VIENDO POR QUE NO FUNCIONA -->
 										<div class="tab-pane fade" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
 											<div class="card-body">
 												<div class="row">
 													<div class="col-12 my-3 text-end text-bg-light p-3 rounded-3">
 														<!-- Botón para abrir el modal de agregar vuelo -->
 														<button class="btn btn-type btn-gsa-success btn-sm" data-bs-toggle="modal" data-bs-target="#addFlightModal"><i
-																class="bi bi-airplane-fill icono"></i> Agregar Nuevo
-															Vuelo</button>
+																class="bi bi-airplane-fill icono"></i> Agregar Nuevo Vuelo</button>
 														<button id="resetData" class="btn btn-type btn-gsa-warning btn-sm"><i
 																class="bi bi-arrow-counterclockwise icono"></i> Resetear Datos</button>
 														<button id="deleteSelected" class="btn btn-type btn-gsa-danger btn-sm btn-sm"><i
@@ -481,9 +482,7 @@
 																<th>Delete</th>
 															</tr>
 														</thead>
-														<tbody>
-											
-														</tbody>
+														<tbody id="sortable-table-1"></tbody>
 													</table>
 											
 											
@@ -1014,12 +1013,12 @@
 	<script src="./assets/js/dashboard.js"></script>
 	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
+	<script src="./assets/lib/sortable/tablesorter.js"></script> -->
 
 	<script src="./assets/js/dummy-datatable.js"></script>
-	<script src="./assets/lib/sortable/tablesorter.js"></script>
 	<script src="./assets/js/dummy.js"></script>
-	<script src="./assets/js/dummy-table-sorter.js"></script>
+ <!-- <script src="./assets/js/dummy-table-sorter.js"></script>  -->
 	<script src="./assets/js/dummy-table-search.js"></script> 
 	
 	<script>

@@ -1,4 +1,4 @@
-console.log("%c<<< load dummy-tablesorter.js >>>", "background: #cff4fc; color:#055160; padding: 2px 5px;");
+console.log("%c<<< load dummy-tablesorter.js >>>", "background: #0d6efd; color:#fff; padding: 2px 5px;");
 document.addEventListener("DOMContentLoaded", function () {
 	const jsonURL = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
 
@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Cargar el JSON
 	fetch(jsonURL)
 		.then(response => response.json())
+	
 		.then(data => {
+			console.log("%c<<< jsonURL >>>", "color: green; font-weight: bold;", data);
 			// Limpiar cada tbody antes de insertar datos
 			tbodies.forEach(tbody => tbody.innerHTML = "");
 

@@ -178,59 +178,70 @@ document.getElementById("resetData").addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", loadTable); */
 
 
-console.log("%c<<< load dummy.js >>>", "background: #cff4fc; color:#055160; padding: 2px 5px;");
+console.log("%c<<< load dummy.js >>>", "background: #20c997; color:#cff4fc; padding: 2px 5px;");
 
-const STORAGE_KEY = "flightData"; // Nueva clave para LocalStorage
+ 
+	const STORAGE_KEY = "flightData"; // Nueva clave para LocalStorage
 
-// Función para abrir el modal de edición
-function openEditModal(event) {
-	const index = event.target.dataset.index;
-	let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
+	// Función para abrir el modal de edición
+	function openEditModal(event) {
+		const index = event.target.dataset.index;
+		let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
-	if (data && data[index]) {
-		const item = data[index];
-		document.getElementById("editFlightNumber").value = item.flightNumber;
-		document.getElementById("editAirline").value = item.airline;
-		document.getElementById("editDestination").value = item.destination;
+		if (data && data[index]) {
+			const item = data[index];
+			document.getElementById("editFlightNumber").value = item.flightNumber;
+			document.getElementById("editAirline").value = item.airline;
+			document.getElementById("editDestination").value = item.destination;
 
-		// Convierte la fecha almacenada al formato correcto para "datetime-local"
-		let formattedDate = new Date(item.departure).toISOString().slice(0, 16);
-		document.getElementById("editDeparture").value = formattedDate;
+			// Convierte la fecha almacenada al formato correcto para "datetime-local"
+			let formattedDate = new Date(item.departure).toISOString().slice(0, 16);
+			document.getElementById("editDeparture").value = formattedDate;
 
-		document.getElementById("editStatus").value = item.status;
-		document.getElementById("saveChanges").setAttribute("data-index", index);
+			document.getElementById("editStatus").value = item.status;
+			document.getElementById("saveChanges").setAttribute("data-index", index);
+		}
 	}
-}
 
 
-// Función para abrir el modal de eliminación
-function openDeleteModal(event) {
-	const index = event.target.dataset.index;
-	document.getElementById("confirmDelete").setAttribute("data-index", index);
-}
-
-// Función para cargar datos (desde LocalStorage o JSON)
-function loadTable() {
-	let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
-	const dataDummy = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
-	let dataLocal = 'assets/dummy/data-flight.json';
-	if (!data) {
-		fetch(dataDummy)
-			.then(response => response.json())
-			.then(jsonData => {
-				localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
-				renderTable(jsonData);
-			})
-			.catch(error => console.error("Error al cargar los datos:", error));
-	} else {
-		renderTable(data);
+	// Función para abrir el modal de eliminación
+	function openDeleteModal(event) {
+		const index = event.target.dataset.index;
+		document.getElementById("confirmDelete").setAttribute("data-index", index);
 	}
-}
+
+	// Función para cargar datos (desde LocalStorage o JSON)
+	function loadTable() {
+
+		let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
+		const dataDummy = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
+		let dataLocal = 'assets/dummy/data-flight.json';
+
+		
+		if (!data) {
+			fetch(dataLocal)
+				.then(response => response.json())
+				.then(jsonData => {
+					console.log("%c<<< tabla Info flyng >>>", "color: green; font-weight: bold;", jsonData);
+					localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
+					renderTable(jsonData);
+					console.log("Datos en localStorage:", JSON.parse(localStorage.getItem(STORAGE_KEY)));
+
+				})
+				.catch(error => console.error("Error al cargar los datos:", error));
+		} else {
+			renderTable(data);
+		}
+	}
 
 // Función para renderizar la tabla
 function renderTable(data) {
-	console.log("%c<<< load DATA dummy >>>", "background: #cff4fc; color:#055160; padding: 2px 5px;", data);
-	const tableBody = document.querySelector(".table tbody");
+	console.log("Renderizando tabla con datos:", data); //Si trae los datos
+	if (!Array.isArray(data)) {
+		console.error("Los datos no son un array:", data);
+		return;
+	}
+	const tableBody = document.querySelector("#sortable-table-1");
 	tableBody.innerHTML = "";
 
 	data.forEach((item, index) => {
@@ -318,7 +329,6 @@ document.getElementById("addFlightForm").addEventListener("submit", function (ev
 	}
 	document.getElementById("addFlightForm").reset();
 });
-
 
 // Función para guardar cambios en edición
 document.getElementById("saveChanges").addEventListener("click", function () {
