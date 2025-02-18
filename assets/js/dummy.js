@@ -211,28 +211,39 @@ console.log("%c<<< load dummy.js >>>", "background: #20c997; color:#cff4fc; padd
 	}
 
 	// Función para cargar datos (desde LocalStorage o JSON)
-	function loadTable() {
+function loadTable() {
+	const FLIGHT_DATA_URL = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
+	const dataLocal = 'assets/dummy/data-flight.json';
 
-		let data = JSON.parse(localStorage.getItem(STORAGE_KEY));
-		const dataDummy = 'https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-flight.json';
-		let dataLocal = 'assets/dummy/data-flight.json';
+	fetch(FLIGHT_DATA_URL)
+		.then(response => response.json())
+		.then(jsonData => {
+			console.log("Datos cargados desde JSON:", jsonData);
 
-		
-		if (!data) {
-			fetch(dataLocal)
-				.then(response => response.json())
-				.then(jsonData => {
-					console.log("%c<<< tabla Info flyng >>>", "color: green; font-weight: bold;", jsonData);
-					localStorage.setItem(STORAGE_KEY, JSON.stringify(jsonData));
-					renderTable(jsonData);
-					console.log("Datos en localStorage:", JSON.parse(localStorage.getItem(STORAGE_KEY)));
+			let storedData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
 
-				})
-				.catch(error => console.error("Error al cargar los datos:", error));
-		} else {
-			renderTable(data);
-		}
-	}
+			// Fusionar datos evitando duplicados
+			let updatedData = mergeFlightData(storedData, jsonData);
+
+			localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedData));
+			renderTable(updatedData);
+		})
+		.catch(error => console.error("Error al cargar los datos:", error));
+}
+
+// Función para fusionar datos sin duplicados (según `flightNumber`)
+function mergeFlightData(existingData, newData) {
+	let flightsMap = new Map();
+
+	existingData.forEach(flight => flightsMap.set(flight.flightNumber, flight));
+	newData.forEach(flight => flightsMap.set(flight.flightNumber, flight));
+
+	return Array.from(flightsMap.values());
+}
+
+// Cargar la tabla al iniciar
+document.addEventListener("DOMContentLoaded", loadTable);
+
 
 // Función para renderizar la tabla
 function renderTable(data) {
