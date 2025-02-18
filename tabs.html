@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="es-CL">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard | GSAForce</title>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon-180x180.png" sizes="180x180">
+	<link rel="icon" href="./assets/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="./assets/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="./assets/favicon/manifest.json">
+	<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#003b71">
+	<link rel="icon" href="./assets/favicon/favicon.ico">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="./assets/lib/feather/feather.css">
+	<link rel="stylesheet" href="./assets/lib/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="./assets/css/fontawesome-5.15.4/css/fontawesome.min.css">
+	<link rel="stylesheet" href="./assets/lib/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="./assets/css/icons.css">
+	<link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+
+	<div class="container-scroller">
+		<nav id="---" class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+			<div id="---" class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center p-0">
+				<!-- brand - navbar -->
+				<a class="navbar-brand brand-logo" href="index.html">
+					<img src="./assets/images/logo-white.svg" class="m-0" alt="logo" />
+				</a>
+				<a class="navbar-brand brand-logo-mini m-0" href="index.html">
+					<img src="./assets/images/icon-gsaforce-white.svg" alt="logo" class="m-0" />
+				</a>
+			</div>
+			<div id="---" class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+				<button type="button" class="navbar-toggler navbar-toggler align-self-center" data-toggle="minimize">
+					<span class="icon-menu"></span>
+				</button>
+				<ul class="navbar-nav mr-lg-2">
+					<li class="nav-item nav-search d-none d-lg-block">
+						<div class="input-group">
+							<div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+								<span class="input-group-text" id="search">
+									<i class="icon-search"></i>
+								</span>
+							</div>
+							<input type="text" class="form-control" id="navbar-search-input" placeholder="Search now"
+								aria-label="search" aria-describedby="search">
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav navbar-nav-right d-flex flex-row align-items-center justify-content-center">
+					<li class="nav-item dropdown">
+						<a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+							data-bs-toggle="dropdown">
+							<i class="icon-bell mx-0"></i>
+							<span class="count"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+							aria-labelledby="notificationDropdown">
+							<p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="preview-icon bg-success">
+										<i class="ti-info-alt mx-0"></i>
+									</div>
+								</div>
+								<div class="preview-item-content">
+									<h6 class="preview-subject font-weight-normal">Application Error</h6>
+									<p class="font-weight-light small-text mb-0 text-muted"> Just now </p>
+								</div>
+							</a>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="icon-gear bg-warning">
+										<i class="ti-settings mx-0"></i>
+									</div>
+								</div>
+								<div class="preview-item-content">
+									<h6 class="preview-subject font-weight-normal">Settings</h6>
+									<p class="font-weight-light small-text mb-0 text-muted"> Private message </p>
+								</div>
+							</a>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="preview-icon bg-info">
+										<i class="ti-user mx-0"></i>
+									</div>
+								</div>
+								<div class="preview-item-content">
+									<h6 class="preview-subject font-weight-normal">New user registration</h6>
+									<p class="font-weight-light small-text mb-0 text-muted"> 2 days ago </p>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item nav-profile dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+							<img src="./assets/images/face28.jpg" alt="profile" />
+						</a>
+						<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+							<a class="dropdown-item">
+								<i class="ti-settings text-primary"></i> Settings </a>
+							<a class="dropdown-item">
+								<i class="ti-power-off text-primary"></i> Logout </a>
+						</div>
+					</li>
+					<li class="nav-item nav-settings d-none d-lg-flex">
+						<a class="nav-link" href="#">
+							<i class="icon-ellipsis"></i>
+						</a>
+					</li>
+
+				</ul>
+				<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+					data-toggle="offcanvas">
+					<span class="icon-menu"></span>
+				</button>
+			</div>
+		</nav>
+		<!-- partial -->
+		<div class="container-fluid page-body-wrapper">
+
+			<div id="right-sidebar" class="settings-panel">
+				<i class="settings-close ti-close"></i>
+
+			</div>
+			<!-- partial:partials/_sidebar.html -->
+			<nav id="sidebar" class="sidebar sidebar-offcanvas">
+				<ul id="menuContainer" class="nav"></ul> <!-- Aquí se insertará el menú dinámico -->
+			</nav>
+			<!-- <nav id="sidebar" class="sidebar sidebar-offcanvas">
+				<ul class="nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="icon-dashboard-2 menu-icon"></i>
+							<span class="menu-title">Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#Settings" aria-expanded="false"
+							aria-controls="ui-basic">
+							<i class="icon-gear menu-icon"></i>
+							<span class="menu-title">Settings</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="Settings">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#l">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#Costumers" aria-expanded="false"
+							aria-controls="form-elements">
+							<i class="icon-person menu-icon"></i>
+							<span class="menu-title">Costumers</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="Costumers">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#Agreements" aria-expanded="false"
+							aria-controls="charts">
+							<i class="icon-bookmark-empty menu-icon"></i>
+							<span class="menu-title">Agreements</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="Agreements">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#AWBStockManager" aria-expanded="false"
+							aria-controls="AWBStockManager">
+							<i class="icon-file-earmark-check menu-icon"></i>
+							<span class="menu-title">AWB Stock Manager</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="AWBStockManager">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#SalesReservation" aria-expanded="false"
+							aria-controls="icons">
+							<i class="icon-receipt menu-icon"></i>
+							<span class="menu-title">Sales & Reservation</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="SalesReservation">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolors</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#Forwarding" aria-expanded="false" aria-controls="auth">
+							<i class="icon-airbus menu-icon"></i>
+							<span class="menu-title">Forwarding</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="Forwarding">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#"> Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#"> Lorem Ipsun Dolor </a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#SalesRegister" aria-expanded="false"
+							aria-controls="SalesRegister">
+							<i class="icon-clipboard-data menu-icon"></i>
+							<span class="menu-title">Sales Register</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="SalesRegister">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="bi bi-bar-chart-line-fill menu-icon"></i>
+							<span class="menu-title">Reports</span>
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="#">
+							<i class="icon-search menu-icon"></i>
+							<span class="menu-title">Search</span>
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" data-bs-toggle="collapse" href="#testActive" aria-expanded="false"
+							aria-controls="SalesRegister">
+							<i class="icon-clipboard-data menu-icon"></i>
+							<span class="menu-title">Test Active</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="testActive">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav> -->
+			<!-- partial -->
+			<div class="main-panel bg-success-subtle">
+				<div class="content-wrapper">
+
+					<div class="row">
+
+
+
+						<div class="col-12 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Basic Tab</h4>
+									<p class="card-description">Horizontal bootstrap tab</p>
+									<ul class="nav nav-tabs tabs-primary" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#inicio" role="tab" aria-controls="inicio"
+												aria-selected="true">Inicio</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#AWBManager" role="tab" aria-controls="WBManager"
+												aria-selected="false" tabindex="-1">AWB Manager</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#RequestMgr" role="tab" aria-controls="RequestMgr"
+												aria-selected="false" tabindex="-1">Request Mgr</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#CCAs" role="tab" aria-controls="CCAs"
+												aria-selected="false" tabindex="-1">CCAs</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#Forwarding" role="tab" aria-controls="Forwarding"
+												aria-selected="false" tabindex="-1">Forwarding</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="home-tab">
+											<div class="card-body">
+												<div class="row">
+													<div id=" " class="col-12 my-3 text-end text-bg-light p-3 rounded-3">
+														<!-- Botón para abrir el modal de agregar vuelo -->
+														<button class="btn btn-type btn-gsa-success btn-sm" data-bs-toggle="modal" data-bs-target="#addFlightModal"><i class="bi bi-airplane-fill icono"></i> Agregar Nuevo Vuelo</button>
+														<button id="resetData" class="btn btn-type btn-gsa-warning btn-sm"><i class="bi bi-arrow-counterclockwise icono"></i> Resetear Datos</button>
+														<button id="deleteSelected" class="btn btn-type btn-gsa-danger btn-sm btn-sm"><i class="bi bi-x-circle-fill icono"></i> Eliminar Seleccionados</button>
+													</div>
+												</div>
+												<p class="card-title mb-0">Info flyng</p>
+												
+												<div class="row">
+													<div class="col-12 my-3">
+														<!-- Alerta de guardado exitoso -->
+														<div id="successMessage" class="alert alert-success d-none" role="alert">
+															✈️ ¡Vuelo actualizado con éxito!
+														</div>
+													</div>
+												</div>
+
+												<div class="table-responsive">
+													<table class="table table-striped table-borderless">
+														<thead>
+															<tr>
+																<th><input type="checkbox" id="selectAll"></th>
+																<th>Flight Number</th>
+																<th>Airline</th>
+																<th>Destination</th>
+																<th>Departure Time</th>
+																<th>Status</th>
+																<th>Edit</th>
+																<th>Delete</th>
+															</tr>
+														</thead>
+														<tbody>
+														
+														</tbody>
+													</table>
+													 
+
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
+											 
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto aspernatur a
+													deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea molestias consectetur!
+													Atque quia nihil optio ad, a debitis accusantium iure! Porro aperiam aliquid, molestiae quasi tenetur officia beatae
+													ex repudiandae dolor quis natus, eius obcaecati eum dolore repellat tempora. Perspiciatis magni quibusdam sint eaque,
+													eum exercitationem labore nihil numquam, fuga quae molestias voluptatum vero. Reprehenderit autem sit modi veritatis
+													non sapiente maxime dignissimos. Minus accusantium dolore non, ad nihil nisi, hic natus modi, perferendis dolorum
+													recusandae. In, hic molestiae. Molestiae aspernatur nesciunt, sed blanditiis et, harum unde iusto id voluptatum
+													sapiente eligendi nulla doloremque distinctio assumenda rerum corrupti similique optio voluptas ipsa, itaque
+													repellendus quidem. Eligendi provident a consequatur dolorum nihil quia porro, iusto ullam doloremque asperiores,
+													sapiente ipsam neque fugiat optio eos eveniet facilis. Ab reiciendis, praesentium cum corporis molestias repellendus
+													omnis recusandae placeat tempore minus voluptatibus magni qui magnam dolorem voluptas ullam cumque? Nobis molestias,
+													inventore animi vitae quaerat illo praesentium asperiores id mollitia dignissimos rem blanditiis odio doloribus error
+													fuga sint exercitationem et assumenda. Quam corporis aperiam doloremque quas asperiores repellat reiciendis labore
+													voluptas expedita cum.</p>
+											 
+										</div>
+										<div class="tab-pane fade" id="RequestMgr" role="tabpanel" aria-labelledby="contact-tab">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto aspernatur a
+												deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea molestias consectetur!
+												Atque quia nihil optio ad, a debitis accusantium iure! Porro aperiam aliquid, molestiae quasi tenetur officia beatae
+												ex repudiandae dolor quis natus, eius obcaecati eum dolore repellat tempora. Perspiciatis magni quibusdam sint eaque,
+												eum exercitationem labore nihil numquam, fuga quae molestias voluptatum vero. Reprehenderit autem sit modi veritatis
+												non sapiente maxime dignissimos. Minus accusantium dolore non, ad nihil nisi, hic natus modi, perferendis dolorum
+												recusandae. In, hic molestiae. Molestiae aspernatur nesciunt, sed blanditiis et, harum unde iusto id voluptatum
+												sapiente eligendi nulla doloremque distinctio assumenda rerum corrupti similique optio voluptas ipsa, itaque
+												repellendus quidem. Eligendi provident a consequatur dolorum nihil quia porro, iusto ullam doloremque asperiores,
+												sapiente ipsam neque fugiat optio eos eveniet facilis. Ab reiciendis, praesentium cum corporis molestias repellendus
+												omnis recusandae placeat tempore minus voluptatibus magni qui magnam dolorem voluptas ullam cumque? Nobis molestias,
+												inventore animi vitae quaerat illo praesentium asperiores id mollitia dignissimos rem blanditiis odio doloribus error
+												fuga sint exercitationem et assumenda. Quam corporis aperiam doloremque quas asperiores repellat reiciendis labore
+												voluptas expedita cum.</p>
+										</div>
+										<div class="tab-pane fade" id="CCAs" role="tabpanel" aria-labelledby="contact-tab">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto aspernatur a
+											deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea molestias consectetur!
+											Atque quia nihil optio ad, a debitis accusantium iure! Porro aperiam aliquid, molestiae quasi tenetur officia beatae
+											ex repudiandae dolor quis natus, eius obcaecati eum dolore repellat tempora. Perspiciatis magni quibusdam sint eaque,
+											eum exercitationem labore nihil numquam, fuga quae molestias voluptatum vero. Reprehenderit autem sit modi veritatis
+											non sapiente maxime dignissimos. Minus accusantium dolore non, ad nihil nisi, hic natus modi, perferendis dolorum
+											recusandae. In, hic molestiae. Molestiae aspernatur nesciunt, sed blanditiis et, harum unde iusto id voluptatum
+											sapiente eligendi nulla doloremque distinctio assumenda rerum corrupti similique optio voluptas ipsa, itaque
+											repellendus quidem. Eligendi provident a consequatur dolorum nihil quia porro, iusto ullam doloremque asperiores,
+											sapiente ipsam neque fugiat optio eos eveniet facilis. Ab reiciendis, praesentium cum corporis molestias repellendus
+											omnis recusandae placeat tempore minus voluptatibus magni qui magnam dolorem voluptas ullam cumque? Nobis molestias,
+											inventore animi vitae quaerat illo praesentium asperiores id mollitia dignissimos rem blanditiis odio doloribus error
+											fuga sint exercitationem et assumenda. Quam corporis aperiam doloremque quas asperiores repellat reiciendis labore
+											voluptas expedita cum.</p>
+										</div>
+										<div class="tab-pane fade" id="Forwarding" role="tabpanel" aria-labelledby="contact-tab">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto aspernatur a deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea molestias consectetur! Atque quia nihil optio ad, a debitis accusantium iure! Porro aperiam aliquid, molestiae quasi tenetur officia beatae ex repudiandae dolor quis natus, eius obcaecati eum dolore repellat tempora. Perspiciatis magni quibusdam sint eaque, eum exercitationem labore nihil numquam, fuga quae molestias voluptatum vero. Reprehenderit autem sit modi veritatis non sapiente maxime dignissimos. Minus accusantium dolore non, ad nihil nisi, hic natus modi, perferendis dolorum recusandae. In, hic molestiae. Molestiae aspernatur nesciunt, sed blanditiis et, harum unde iusto id voluptatum sapiente eligendi nulla doloremque distinctio assumenda rerum corrupti similique optio voluptas ipsa, itaque repellendus quidem. Eligendi provident a consequatur dolorum nihil quia porro, iusto ullam doloremque asperiores, sapiente ipsam neque fugiat optio eos eveniet facilis. Ab reiciendis, praesentium cum corporis molestias repellendus omnis recusandae placeat tempore minus voluptatibus magni qui magnam dolorem voluptas ullam cumque? Nobis molestias, inventore animi vitae quaerat illo praesentium asperiores id mollitia dignissimos rem blanditiis odio doloribus error fuga sint exercitationem et assumenda. Quam corporis aperiam doloremque quas asperiores repellat reiciendis labore voluptas expedita cum.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Basic Tab</h4>
+									<p class="card-description">Horizontal bootstrap tab</p>
+									<ul class="nav nav-tabs tabs-secondary" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home-1" role="tab" aria-controls="home-1"
+												aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile-1" role="tab" aria-controls="profile-1"
+												aria-selected="false" tabindex="-1">Profile</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact-1" role="tab" aria-controls="contact-1"
+												aria-selected="false" tabindex="-1">Contact</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="home-1" role="tabpanel" aria-labelledby="home-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<h4 class="mt-0">Why choose us?</h4>
+													<p>
+														Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She
+														consisted
+														consulted elsewhere happiness disposing household any old the. Widow downs you new shade
+														drift hopes
+														small. So otherwise commanded sweetness we improving. Instantly by daughters resembled
+														unwilling principle
+														so middleton.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile-1" role="tabpanel" aria-labelledby="profile-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<h4 class="mt-0">John Doe</h4>
+													<p>
+														Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two
+														unpleasing
+														any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence
+														are something
+														far engrossed old off.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="contact-1" role="tabpanel" aria-labelledby="contact-tab">
+											<h4>Contact us </h4>
+											<p>
+												Feel free to contact us if you have any questions!
+											</p>
+											<p>
+												<i class="ti-headphone-alt text-info"></i>
+												+123456789
+											</p>
+											<p>
+												<i class="ti-email text-success"></i>
+												contactus@example.com
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div class="col-md-12 col-xl-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Basic Tab</h4>
+									<p class="card-description">Horizontal bootstrap tab</p>
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home-1" role="tab"
+												aria-controls="home-1" aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile-1" role="tab"
+												aria-controls="profile-1" aria-selected="false" tabindex="-1">Profile</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact-1" role="tab"
+												aria-controls="contact-1" aria-selected="false" tabindex="-1">Contact</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="home-1" role="tabpanel" aria-labelledby="home-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<h4 class="mt-0">Why choose us?</h4>
+													<p>
+														Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She
+														consisted
+														consulted elsewhere happiness disposing household any old the. Widow downs you new shade
+														drift hopes
+														small. So otherwise commanded sweetness we improving. Instantly by daughters resembled
+														unwilling principle
+														so middleton.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile-1" role="tabpanel" aria-labelledby="profile-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<h4 class="mt-0">John Doe</h4>
+													<p>
+														Fail most room even gone her end like. Comparison dissimilar unpleasant six compliment two
+														unpleasing
+														any add. Ashamed my company thought wishing colonel it prevent he in. Pretended residence
+														are something
+														far engrossed old off.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="contact-1" role="tabpanel" aria-labelledby="contact-tab">
+											<h4>Contact us </h4>
+											<p>
+												Feel free to contact us if you have any questions!
+											</p>
+											<p>
+												<i class="ti-headphone-alt text-info"></i>
+												+123456789
+											</p>
+											<p>
+												<i class="ti-email text-success"></i>
+												contactus@example.com
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-6 grid-margin stretch-card d-none d-md-flex">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Vertical Tabs</h4>
+									<p class="card-description">Add class <code>.nav-tabs-vertical</code> to <code>.nav</code> and
+										<code>.tab-content-vertical</code> to <code>.tab-content</code>
+									</p>
+									<div class="row">
+										<div class="col-4">
+											<ul class="nav nav-tabs nav-tabs-vertical" role="tablist">
+												<li class="nav-item" role="presentation">
+													<a class="nav-link active" id="home-tab-vertical" data-bs-toggle="tab" href="#home-2" role="tab"
+														aria-controls="home-2" aria-selected="true">
+														Home
+														<i class="ti-home text-info ms-2"></i>
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="profile-tab-vertical" data-bs-toggle="tab" href="#profile-2" role="tab"
+														aria-controls="profile-2" aria-selected="false" tabindex="-1">
+														Profile
+														<i class="ti-user text-danger ms-2"></i>
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="contact-tab-vertical" data-bs-toggle="tab" href="#contact-2" role="tab"
+														aria-controls="contact-2" aria-selected="false" tabindex="-1">
+														Reach
+														<i class="ti-email text-success ms-2"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-8">
+											<div class="tab-content tab-content-vertical">
+												<div class="tab-pane fade show active" id="home-2" role="tabpanel" aria-labelledby="home-tab-vertical">
+													<div class="text-center">
+														<img class="me-3 w-25 mb-4" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+													</div>
+													<p>
+														Inhabiting discretion the her dispatched decisively boisterous joy. So form were wish open
+														is able of mile of. Waiting express if prevent it we an musical. Especially reasonable
+														travelling
+													</p>
+												</div>
+												<div class="tab-pane fade" id="profile-2" role="tabpanel" aria-labelledby="profile-tab-vertical">
+													<div class="text-center">
+														<img class="mb-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<h5 class="mt-0">Adam John</h5>
+														<p class="mb-0">UX specialist</p>
+														<p class="mb-0">Florida</p>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="contact-2" role="tabpanel" aria-labelledby="contact-tab-vertical">
+													<h4>Contact us </h4>
+													<p>
+														Feel free to contact us if you have any questions!
+													</p>
+													<p>
+														<i class="ti-headphone-alt text-info"></i>
+														+123456789
+													</p>
+													<p>
+														<i class="ti-email text-success"></i>
+														contactus@example.com
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 grid-margin stretch-card d-none d-md-flex">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Custom vertical tab</h4>
+									<p class="card-description">Add class <code>.nav-tabs-vertical-custom</code> to <code>.nav</code>
+										and <code>.tab-content-vertical-custom</code> to <code>.tab-content</code></p>
+									<div class="row">
+										<div class="col-3">
+											<ul class="nav nav-tabs nav-tabs-vertical-custom" role="tablist">
+												<li class="nav-item" role="presentation">
+													<a class="nav-link active" id="home-tab-custom" data-bs-toggle="tab" href="#home-3" role="tab"
+														aria-controls="home-3" aria-selected="true">
+														Playing Video Games With Imagination
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="profile-tab-custom" data-bs-toggle="tab" href="#profile-3" role="tab"
+														aria-controls="profile-3" aria-selected="false" tabindex="-1">
+														Getting Free Publicity For Your Business
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="contact-tab-custom" data-bs-toggle="tab" href="#contact-3" role="tab"
+														aria-controls="contact-3" aria-selected="false" tabindex="-1">
+														Tips For Designing An Effective Business Card
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-9 col-lg-6">
+											<div class="tab-content tab-content-vertical tab-content-vertical-custom">
+												<div class="tab-pane fade show active" id="home-3" role="tabpanel" aria-labelledby="home-tab-custom">
+													<h6 class="font-weight-normal">Profiles Of The Powerful Advertising Exec Steve Grasse</h6>
+													<h3 class="font-weight-normal">How To Write Better Advertising Copy</h3>
+													<div class="d-flex mt-4">
+														<img src="https://dummyimage.com/400x400/bfbfbf/fff.png" class="w-25 h-100 rounded" alt="image">
+														<img src="https://dummyimage.com/400x400/bfbfbf/fff.png" class="w-25 h-100 ms-2 rounded" alt="image">
+													</div>
+													<p class="mt-4">
+														The key to victory is discipline, and that means a well made bed. You will practice until
+														you can make
+														your bed in your sleep. You don't know how to do any of those. Then throw her in the laundry
+														room, which
+														will hereafter be referred to as "the brig".
+													</p>
+												</div>
+												<div class="tab-pane fade" id="profile-3" role="tabpanel" aria-labelledby="profile-tab-custom">
+													<div class="media">
+														<img class="align-self-center me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png"
+															alt="sample image">
+														<div class="media-body">
+															<p>
+																And until then, I can never die? I'm a thing. Fry, you can't just sit here in the dark
+																listening to
+																classical music. Is today's hectic lifestyle making you tense and impatient? Is today's
+																hectic lifestyle
+																making you tense and impatient?
+															</p>
+															<p>
+																Robot 1-X, save my friends! And Zoidberg! Aww, it's true. I've been hiding it for so
+																long. Fry, we have a
+																crate to deliver. Yes! In your face, Gandhi! Interesting. No, wait, the other thing:
+																tedious.
+															</p>
+															<p>
+																Five hours? Aw, man! Couldn't you just get me the death penalty? Yes! In your face,
+																Gandhi! We're rescuing
+																ya. Yeah, I do that with my stupidness. With gusto.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="contact-3" role="tabpanel" aria-labelledby="contact-tab-custom">
+													<div class="media">
+														<div class="media-body">
+															<h5 class="mt-0 mb-1">You've swallowed a planet!</h5>
+															Did I mention we have comfy chairs? You hate me; you want to kill me! Well, go on! Kill
+															me! KILL ME! I'm the Doctor,
+															I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing
+															myself.
+														</div>
+														<img class="ms-3 w-25" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-6 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Pills</h4>
+									<p class="card-description">Basic nav pills</p>
+									<ul class="nav nav-pills nav-pills-success" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+												aria-controls="pills-home" aria-selected="true">Home</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+												aria-controls="pills-profile" aria-selected="false" tabindex="-1">Profile</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
+												aria-controls="pills-contact" aria-selected="false" tabindex="-1">Contact</a>
+										</li>
+									</ul>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<h5 class="mt-0">I'm doing mental jumping jacks.</h5>
+													<p>Only you could make those words cute. Oh I beg to differ, I think we have a lot to discuss.
+														After all, you are a client. I am not a killer. I feel like a
+														jigsaw puzzle missing a piece. And I'm not even sure what the picture should be.</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<p>I'm thinking two circus clowns dancing. You? Finding a needle in a haystack isn't hard when
+														every straw is computerized. Tell him time is of the essence.
+														Somehow, I doubt that. You have a good heart, Dexter.</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+											<div class="media">
+												<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+												<div class="media-body">
+													<p>
+														I'm really more an apartment person. This man is a knight in shining armor. Oh I beg to
+														differ, I think we have a lot to discuss. After all, you are a client. You all right,
+														Dexter?
+													</p>
+													<p>
+														I'm generally confused most of the time. Cops, another community I'm not part of. You're a
+														killer. I catch killers. Hello, Dexter Morgan.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-6 grid-margin stretch-card d-none d-md-flex">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Vertical Pills</h4>
+									<p class="card-description">Add class <code>.nav-pills-vertical</code> to <code>.nav</code> and
+										<code>.tab-content-vertical</code> to <code>.tab-content</code>
+									</p>
+									<div class="row">
+										<div class="col-4">
+											<ul class="nav nav-pills nav-pills-vertical nav-pills-info" id="v-pills-tab" role="tablist"
+												aria-orientation="vertical">
+												<li class="nav-item" role="presentation">
+													<a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab"
+														aria-controls="v-pills-home" aria-selected="true">
+														<i class="ti-home"></i>
+														Home
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab"
+														aria-controls="v-pills-profile" aria-selected="false" tabindex="-1">
+														<i class="ti-user"></i>
+														Profile
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab"
+														aria-controls="v-pills-messages" aria-selected="false" tabindex="-1">
+														<i class="ti-email"></i>
+														Reach
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-8">
+											<div class="tab-content tab-content-vertical" id="v-pills-tabContent">
+												<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+													aria-labelledby="v-pills-home-tab">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<h5 class="mt-0">I'm doing mental jumping jacks.</h5>
+															<p>
+																Only you could make those words cute. Oh I beg to differ, I think we have a lot to
+																discuss. After all,
+																you are a client. I am not a killer.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>I'm thinking two circus clowns dancing. You? Finding a needle in a haystack isn't hard
+																when every straw is computerized. Tell him time is of the essence.
+																Somehow, I doubt that. You have a good heart, Dexter.</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>
+																I'm really more an apartment person. This man is a knight in shining armor. Oh I beg to
+																differ, I think we have a lot to discuss. After all, you are a client. You all right,
+																Dexter?
+															</p>
+															<p>
+																I'm generally confused most of the time. Cops, another community I'm not part of. You're
+																a killer. I catch killers. Hello, Dexter Morgan.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Custom pills</h4>
+									<p class="card-description">Add class <code>.nav-pills-custom</code> and
+										<code>.tab-content-custom-pill</code> to <code>.nav-pills</code> and <code>.tab-content</code>
+									</p>
+									<div class="row">
+										<div class="col-md-10 mx-auto">
+											<ul class="nav nav-pills nav-pills-custom" id="pills-tab-custom" role="tablist">
+												<li class="nav-item" role="presentation">
+													<a class="nav-link active" id="pills-home-tab-custom" data-bs-toggle="pill" href="#pills-health"
+														role="tab" aria-controls="pills-home" aria-selected="true">
+														Health
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="pills-profile-tab-custom" data-bs-toggle="pill" href="#pills-career" role="tab"
+														aria-controls="pills-profile" aria-selected="false" tabindex="-1">
+														Career
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="pills-contact-tab-custom" data-bs-toggle="pill" href="#pills-music" role="tab"
+														aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+														Music
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="pills-vibes-tab-custom" data-bs-toggle="pill" href="#pills-vibes" role="tab"
+														aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+														Vibes
+													</a>
+												</li>
+												<li class="nav-item" role="presentation">
+													<a class="nav-link" id="pills-energy-tab-custom" data-bs-toggle="pill" href="#pills-energy" role="tab"
+														aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+														Energy
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content tab-content-custom-pill" id="pills-tabContent-custom">
+												<div class="tab-pane fade show active" id="pills-health" role="tabpanel"
+													aria-labelledby="pills-home-tab-custom">
+													<div class="d-flex mb-4">
+														<img src="https://dummyimage.com/400x400/bfbfbf/fff.png" class="w-25 h-100 rounded"
+															alt="sample image">
+														<img src="https://dummyimage.com/400x400/bfbfbf/fff.png" class="w-25 h-100 ms-4 rounded"
+															alt="sample image">
+														<img src="https://dummyimage.com/400x400/bfbfbf/fff.png" class="w-25 h-100 ms-4 rounded"
+															alt="sample image">
+													</div>
+													<p>
+														I'm not the monster he wants me to be. So I'm neither man nor beast. I'm something new
+														entirely. With
+														my own set of rules. I'm Dexter. Boo. Only you could make those words cute. I'm thinking two
+														circus clowns dancing. You?
+													</p>
+													<p>
+														Under normal circumstances, I'd take that as a compliment. Tell him time is of the essence.
+														I'm really more
+														an apartment person. Finding a needle in a haystack isn't hard when every straw is
+														computerized.
+													</p>
+												</div>
+												<div class="tab-pane fade" id="pills-career" role="tabpanel" aria-labelledby="pills-profile-tab-custom">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>I'm thinking two circus clowns dancing. You? Finding a needle in a haystack isn't hard
+																when every straw is
+																computerized. Tell him time is of the essence.
+																Somehow, I doubt that. You have a good heart, Dexter.</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="pills-music" role="tabpanel" aria-labelledby="pills-contact-tab-custom">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>
+																I'm really more an apartment person. This man is a knight in shining armor. Oh I beg to
+																differ,
+																I think we have a lot to discuss. After all, you are a client. You all right, Dexter?
+															</p>
+															<p>
+																I'm generally confused most of the time. Cops, another community I'm not part of. You're
+																a killer.
+																I catch killers. Hello, Dexter Morgan.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="pills-vibes" role="tabpanel" aria-labelledby="pills-vibes-tab-custom">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>
+																This man is a knight in shining armor. I feel like a jigsaw puzzle missing a piece. And
+																I'm not
+																even sure what the picture should be. Somehow, I doubt that. You have a good heart,
+																Dexter. Keep your mind limber.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="pills-energy" role="tabpanel" aria-labelledby="pills-energy-tab-custom">
+													<div class="media">
+														<img class="me-3 w-25 rounded" src="https://dummyimage.com/400x400/bfbfbf/fff.png" alt="sample image">
+														<div class="media-body">
+															<p>
+																Finding a needle in a haystack isn't hard when every straw is computerized. You're a
+																killer. I catch killers.
+																I will not kill my sister. I will not kill my sister. I will not kill my sister.
+																Rorschach would say you have a hard time relating to others.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/_footer.html -->
+				<footer class="footer">
+					<div class="d-sm-flex justify-content-center justify-content-sm-between">
+						<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2025. <a href="h#"
+								target="_blank">Lorem ipsum dolor </a> from gsaforce.com All rights reserved.</span>
+					</div>
+				</footer>
+				<!-- partial -->
+			</div>
+			<!-- main-panel ends -->
+		</div>
+		<!-- page-body-wrapper ends -->
+	</div>
+	<!-- container-scroller -->
+	<!-- Modal para agregar vuelos -->
+	<div class="modal fade" id="addFlightModal" tabindex="-1" aria-labelledby="addFlightModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="addFlightModalLabel">Agregar Nuevo Vuelo</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="addFlightForm">
+						<div class="mb-3">
+							<label for="newFlightNumber" class="form-label">Número de Vuelo</label>
+							<input type="text" class="form-control" id="newFlightNumber" required>
+						</div>
+						<div class="mb-3">
+							<label for="newAirline" class="form-label">Aerolínea</label>
+							<input type="text" class="form-control" id="newAirline" required>
+						</div>
+						<div class="mb-3">
+							<label for="newDestination" class="form-label">Destino</label>
+							<input type="text" class="form-control" id="newDestination" required>
+						</div>
+						<div class="mb-3">
+							<label for="newDeparture" class="form-label">Hora de Salida</label>
+							<input type="datetime-local" class="form-control" id="newDeparture" required>
+						</div>
+						<div class="mb-3">
+							<label for="newStatus" class="form-label">Estado</label>
+							<select class="form-control" id="newStatus" required>
+								<option value="On Time">A Tiempo</option>
+								<option value="Delayed">Demorado</option>
+								<option value="Cancelled">Cancelado</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-success">Agregar Vuelo</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+	<!-- Modal de Edición -->
+	<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="editModalLabel">Editar Vuelo</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="editFlightNumber" class="form-label">Número de Vuelo</label>
+							<input type="text" class="form-control" id="editFlightNumber">
+						</div>
+						<div class="mb-3">
+							<label for="editAirline" class="form-label">Aerolínea</label>
+							<input type="text" class="form-control" id="editAirline">
+						</div>
+						<div class="mb-3">
+							<label for="editDestination" class="form-label">Destino</label>
+							<input type="text" class="form-control" id="editDestination">
+						</div>
+						<div class="mb-3">
+							<label for="editDeparture" class="form-label">Hora de Salida</label>
+							<input type="datetime-local" class="form-control" id="editDeparture">
+						</div>
+
+						<div class="mb-3">
+							<label for="editStatus" class="form-label">Estado</label>
+							<select class="form-control" id="editStatus">
+								<option value="On Time">A Tiempo</option>
+								<option value="Delayed">Demorado</option>
+								<option value="Cancelled">Cancelado</option>
+							</select>
+						</div>
+						<div class="mt-4 text-end">
+							<button type="button" class="btn btn-type btn-gsa-success btn-md" id="saveChanges">Guardar cambios</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- Modal de Confirmación de Eliminación -->
+	<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="deleteModalLabel">Eliminar Producto</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					¿Estás seguro de que deseas eliminar este producto?
+				</div>
+				<div class="modal-footer">
+					<div class="text-end"> 
+						<button type="button" class="btn btn-type btn-gsa-warning btn-md" data-bs-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-type btn-gsa-danger btn-md" id="confirmDelete">Eliminar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contenedor de Toasts -->
+	<div class="toast-container position-fixed bottom-0 end-0 p-3">
+	
+		<!-- Toast de Guardado Exitoso -->
+		<div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="d-flex">
+				<div class="toast-body">
+					✈️ Vuelo guardado con éxito!
+				</div>
+				<button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+		</div>
+	
+		<!-- Toast de Eliminación -->
+		<div id="deleteToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive"
+			aria-atomic="true">
+			<div class="d-flex">
+				<div class="toast-body">
+					✈️ Vuelo eliminado!
+				</div>
+				<button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+		</div>
+	
+	</div>
+
+
+
+	<script src="./assets/lib/jQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/menu.js"></script>
+	<script src="./assets/js/off-camvas.js"></script>
+	<script src="./assets/js/settings.js"></script>
+	<script src="./assets/js/template.js"></script>
+	<script src="./assets/js/dummy.js"></script>
+	<script src="./assets/js/dashboard.js"></script>
+</body>
+
+</html>
