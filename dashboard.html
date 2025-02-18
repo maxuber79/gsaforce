@@ -369,10 +369,11 @@
 										</li>
 									</ul>
 									<div class="tab-content">
-										<div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="home-tab">
+
+										<div class="tab-pane fade" id="inicio" role="tabpanel" aria-labelledby="home-tab">
 											<div class="card-body">
 												<div class="row">
-													<div id=" " class="col-12 my-3 text-end text-bg-light p-3 rounded-3">
+													<div class="col-12 my-3 text-end text-bg-light p-3 rounded-3">
 														<!-- Botón para abrir el modal de agregar vuelo -->
 														<button class="btn btn-type btn-gsa-success btn-sm" data-bs-toggle="modal"
 															data-bs-target="#addFlightModal"><i class="bi bi-airplane-fill icono"></i> Agregar Nuevo
@@ -410,37 +411,82 @@
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane fade" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
-					
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto
-												aspernatur a
-												deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea molestias
-												consectetur!
-												Atque quia nihil optio ad, a debitis accusantium iure! Porro aperiam aliquid, molestiae quasi tenetur
-												officia beatae
-												ex repudiandae dolor quis natus, eius obcaecati eum dolore repellat tempora. Perspiciatis magni quibusdam
-												sint eaque,
-												eum exercitationem labore nihil numquam, fuga quae molestias voluptatum vero. Reprehenderit autem sit modi
-												veritatis
-												non sapiente maxime dignissimos. Minus accusantium dolore non, ad nihil nisi, hic natus modi, perferendis
-												dolorum
-												recusandae. In, hic molestiae. Molestiae aspernatur nesciunt, sed blanditiis et, harum unde iusto id
-												voluptatum
-												sapiente eligendi nulla doloremque distinctio assumenda rerum corrupti similique optio voluptas ipsa,
-												itaque
-												repellendus quidem. Eligendi provident a consequatur dolorum nihil quia porro, iusto ullam doloremque
-												asperiores,
-												sapiente ipsam neque fugiat optio eos eveniet facilis. Ab reiciendis, praesentium cum corporis molestias
-												repellendus
-												omnis recusandae placeat tempore minus voluptatibus magni qui magnam dolorem voluptas ullam cumque? Nobis
-												molestias,
-												inventore animi vitae quaerat illo praesentium asperiores id mollitia dignissimos rem blanditiis odio
-												doloribus error
-												fuga sint exercitationem et assumenda. Quam corporis aperiam doloremque quas asperiores repellat
-												reiciendis labore
-												voluptas expedita cum.</p>
-					
+										
+										<div class="tab-pane fade show active" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
+											<div class="card-body">
+												<h4 class="card-title">Table data & search</h4>
+												<p class="card-description">Add box <code>search</code> for table</p>
+												<div class="row">
+													<div class="col-12 my-3 text-bg-light p-3 rounded-3">
+														 
+														<form id="form-search" class="row">
+															<div class="col-12 mb-3">
+																<div class="form-group search-container">
+																	<input id="search-input" class="form-control search-input" type="search" placeholder="Search for your organization">
+																	<span class="input-group-append">
+																		<button class="btn border-0 ms-n5" type="button">
+																			<i class="bi bi-search"></i>
+																		</button>
+																	</span>
+																</div>
+															</div>
+															<div class="col-4">
+																<div class="form-group">
+																	<label for="FlightNumber">Flight Number</label>
+																	<input type="text" class="form-control" id="FlightNumber" placeholder="Flight Number">
+																</div>
+															</div>
+															<div class="col-4">
+																<div class="form-group">
+																	<label for="Airline">Airline</label>
+																	<input type="text" class="form-control" id="Airline" placeholder="Airline">
+																</div>
+															</div>
+															<div class="col-4">
+																<div class="form-group">
+																	<label for="Destination">Destination</label>
+																	<input type="text" class="form-control" id="Destination" placeholder="Destination">
+																</div>
+															</div>
+															<div class="col-12 mt-3 text-end">
+																<button id="clean" class="btn btn-type btn-gsa-danger btn-sm">Clean</button>
+																<button id="btn-search" type="submit" class="btn btn-type btn-gsa-success btn-sm">Search</button>
+															</div>
+														</form>
+
+
+
+													</div>
+													<div class="col-12 text-end py-3">
+														<button id="deleteAllFlights" class="btn btn-type btn-gsa-danger btn-sm" disabled>Eliminar Todos</button>
+													</div>
+													<div class="col-12">
+														<div class="table-responsive">
+															<table id="table-search" class="table table-striped table-borderless">
+																<thead>
+																	<tr>
+																		<th><input type="checkbox" id="selectAllFlights"></th>
+																		<th>Flight Number</th>
+																		<th>Airline</th>
+																		<th>Destination</th>
+																		<th>Departure Time</th>
+																		<th>Status</th>
+																		<th>Edit</th>
+																		<th>Delete</th>
+																	</tr>
+																</thead>
+																<tbody>
+														
+																</tbody>
+															</table>
+														
+														
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
+										
 										<div class="tab-pane fade" id="RequestMgr" role="tabpanel" aria-labelledby="contact-tab">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto
 												aspernatur a
@@ -470,6 +516,7 @@
 												reiciendis labore
 												voluptas expedita cum.</p>
 										</div>
+
 										<div class="tab-pane fade" id="CCAs" role="tabpanel" aria-labelledby="contact-tab">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto
 												aspernatur a
@@ -499,6 +546,7 @@
 												reiciendis labore
 												voluptas expedita cum.</p>
 										</div>
+
 										<div class="tab-pane fade" id="Forwarding" role="tabpanel" aria-labelledby="contact-tab">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tenetur ratione aliquid architecto
 												aspernatur a deserunt nulla, autem est vero consequatur quas ab repellendus porro nam, et itaque nobis ea
@@ -965,6 +1013,7 @@
 	<script src="./assets/lib/sortable/tablesorter.js"></script>
 	<script src="./assets/js/dummy.js"></script>
 	<script src="./assets/js/dummy-table-sorter.js"></script>
+	<script src="./assets/js/dummy-table-search.js"></script> 
 	<script>
 		(function () {
 			'use strict';

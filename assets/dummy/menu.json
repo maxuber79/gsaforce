@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Dashboard",
+    "icon": "icon-dashboard-2",
+    "link": "#"
+  },
+  {
+    "title": "Settings",
+    "icon": "icon-gear",
+    "subMenu": [
+      { "title": "Forms Elements", "link": "forms-elements.html" },
+      { "title": "Tables", "link": "tables.html" },
+      { "title": "Buttons", "link": "buttons.html" },
+      { "title": "Tabs", "link": "tabs.html" },
+      { "title": "Typography", "link": "typography.html" }
+    ]
+  },
+  {
+    "title": "Costumers",
+    "icon": "icon-person",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "Agreements",
+    "icon": "icon-bookmark-empty",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "AWB Stock Manager",
+    "icon": "icon-file-earmark-check",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "Sales & Reservation",
+    "icon": "icon-receipt",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "Forwarding",
+    "icon": "icon-airbus",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" },
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "Sales Register",
+    "icon": "icon-clipboard-data",
+    "subMenu": [
+      { "title": "Lorem Ipsun Dolor", "link": "#" },
+      { "title": "Lorem Ipsun Dolor", "link": "#" }
+    ]
+  },
+  {
+    "title": "Reports",
+    "icon": "bi bi-bar-chart-line-fill",
+    "link": "#"
+  },
+  {
+    "title": "Search",
+    "icon": "icon-search",
+    "link": "#"
+  }
+]

@@ -110,5 +110,85 @@
         "departure": "2024-06-16T22:55",
         "status": "Cancelled",
         "statusClass": "text-bg-danger"
+    },
+    {
+        "flightNumber": "LA100",
+        "airline": "LATAM Airlines",
+        "destination": "Concepción, Chile",
+        "departure": "2024-06-10T08:00",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "SK200",
+        "airline": "Sky Airline",
+        "destination": "Antofagasta, Chile",
+        "departure": "2024-06-10T09:45",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "JA305",
+        "airline": "JetSMART",
+        "destination": "Puerto Montt, Chile",
+        "departure": "2024-06-10T14:30",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "LA402",
+        "airline": "LATAM Airlines",
+        "destination": "Iquique, Chile",
+        "departure": "2024-06-11T07:20",
+        "status": "Cancelled",
+        "statusClass": "text-bg-danger"
+    },
+    {
+        "flightNumber": "SK500",
+        "airline": "Sky Airline",
+        "destination": "La Serena, Chile",
+        "departure": "2024-06-11T10:15",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "JA600",
+        "airline": "JetSMART",
+        "destination": "Arica, Chile",
+        "departure": "2024-06-11T16:40",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
+    },
+    {
+        "flightNumber": "LA705",
+        "airline": "LATAM Airlines",
+        "destination": "Temuco, Chile",
+        "departure": "2024-06-12T12:50",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "SK800",
+        "airline": "Sky Airline",
+        "destination": "Valdivia, Chile",
+        "departure": "2024-06-12T17:25",
+        "status": "Cancelled",
+        "statusClass": "text-bg-danger"
+    },
+    {
+        "flightNumber": "JA905",
+        "airline": "JetSMART",
+        "destination": "Coyhaique, Chile",
+        "departure": "2024-06-13T09:10",
+        "status": "On Time",
+        "statusClass": "text-bg-success"
+    },
+    {
+        "flightNumber": "LA102",
+        "airline": "LATAM Airlines",
+        "destination": "Punta Arenas, Chile",
+        "departure": "2024-06-13T14:45",
+        "status": "Delayed",
+        "statusClass": "text-bg-warning"
     }
 ]
