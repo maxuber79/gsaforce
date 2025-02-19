@@ -14,12 +14,12 @@
  
 
     //background constants
-    var navbar_classes = "navbar-danger navbar-success navbar-warning navbar-dark navbar-light navbar-primary navbar-info navbar-pink";
+    /* var navbar_classes = "navbar-danger navbar-success navbar-warning navbar-dark navbar-light navbar-primary navbar-info navbar-pink";
     var sidebar_classes = "sidebar-light sidebar-dark";
-    var $body = $("body");
+    var $body = $("body"); */
 
     //sidebar backgrounds
-    $("#sidebar-light-theme").on("click" , function(){
+   /*  $("#sidebar-light-theme").on("click" , function(){
       $body.removeClass(sidebar_classes);
       $body.addClass("sidebar-light");
       $(".sidebar-bg-options").removeClass("selected");
@@ -30,11 +30,11 @@
       $body.addClass("sidebar-dark");
       $(".sidebar-bg-options").removeClass("selected");
       $(this).addClass("selected");
-    });
+    }); */
 
 
     //Navbar Backgrounds
-    $(".tiles.primary").on("click" , function(){
+    /* $(".tiles.primary").on("click" , function(){
       $(".navbar").removeClass(navbar_classes);
       $(".navbar").addClass("navbar-primary");
       $(".tiles").removeClass("selected");
@@ -80,6 +80,6 @@
       $(".navbar").removeClass(navbar_classes);
       $(".tiles").removeClass("selected");
       $(this).addClass("selected");
-    });
+    }); */
   });
 })(jQuery);

@@ -1193,108 +1193,18 @@
 	<script src="./assets/js/off-camvas.js"></script>
 	<script src="./assets/js/settings.js"></script>
 	<script src="./assets/js/template.js"></script> 
-	<script src="./assets/js/dashboard.js"></script>
 	<!-- lib dataTables -->
 	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 	<!-- lib select2 -->
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
-	<script src="./assets/lib/sortable/tablesorter.js"></script> -->
-
-	<script src="./assets/js/dummy-datatable.js"></script>
-	<script src="./assets/js/dummy.js"></script>
- <!-- <script src="./assets/js/dummy-table-sorter.js"></script>  -->
-	<script src="./assets/js/dummy-table-search.js"></script> 
+ 
 	
-	<script>
-		(function () {
-			'use strict';
+	<script src="./assets/js/dashboard.js"></script>
+	<script src="./assets/js/dummy-datatable.js"></script>
+	<script src="./assets/js/dummy.js"></script> 
+	<script src="./assets/js/dummy-table-search.js"></script> 
 
-			window.addEventListener('load', function () {
-				var forms = document.getElementsByClassName('needs-validation');
-
-				Array.prototype.filter.call(forms, function (form) {
-					form.addEventListener('submit', function (event) {
-						if (form.checkValidity() === false) {
-							event.preventDefault();
-							event.stopPropagation();
-						}
-						form.classList.add('was-validated');
-					}, false);
-				});
-			}, false);
-		})();
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			fetch('./assets/dummy/data-tabla.json')
-				.then(response => response.json()) // Convertir respuesta a JSON
-				.then(data => {
-					console.log("%c<<< jsonLocal for dataTable >>>", "color: green; font-weight: bold;", data);
-					$('#dataTable').DataTable({
-						data: data,
-						columns: [
-							{ data: null, render: function () { return '<input type="checkbox" class="row-checkbox">'; } },
-							{ data: "Bkg" },
-							{ data: "GsaName" },
-							{ data: "NumBkg" },
-							{ data: "Kg" },
-							{ data: "SalesUSD" },
-							{ data: "CostUSD" },
-							{ data: "MarginUSD" }
-						],
-						paging: true,
-						searching: true,
-						ordering: true
-					});
-
-					// Manejar selección de checkboxes
-					document.getElementById("selectAllInformation").addEventListener("click", function () {
-						document.querySelectorAll(".row-checkbox").forEach(checkbox => {
-							checkbox.checked = this.checked;
-						});
-					});
-				})
-				.catch(error => console.error("Error cargando JSON:", error));
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-				fetch('./assets/dummy/data-tabla.json')
-				.then(response => response.json())
-				.then(data => {
-					let selectData = data.map(item => ({
-						id: item.Bkg,  // ID único
-						text: `${item.GsaName} - ${item.Bkg}`, // Mostrar ambos valores
-						bkg: item.Bkg // Guardar el Bkg como dato extra
-					}));
-
-					$('#selectGsa').select2({
-						theme: 'bootstrap-5',
-						data: selectData,
-						dropdownAutoWidth: true,
-						width: '100%',
-						allowClear: true,
-
-						// Personaliza cómo se muestran las opciones en el desplegable
-						templateResult: function (data) {
-							if (!data.id) return data.text; // Evita errores al cargar
-
-							return $(`<span>${data.text}</span>`);
-						},
-
-						// Personaliza cómo se muestra la opción seleccionada
-						templateSelection: function (data) {
-							return data.text;
-						}
-					});
-				})
-				.catch(error => console.error("Error cargando JSON:", error));
-
-
-		});
-	</script>
 </body>
 
 </html>
