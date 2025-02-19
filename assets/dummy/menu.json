@@ -2,7 +2,7 @@
   {
     "title": "Dashboard",
     "icon": "icon-dashboard-2",
-    "link": "#"
+    "link": "dashboard.html"
   },
   {
     "title": "Settings",
