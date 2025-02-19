@@ -13,15 +13,23 @@
 	<link rel="manifest" href="./assets/favicon/manifest.json">
 	<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#003b71">
 	<link rel="icon" href="./assets/favicon/favicon.ico">
-
+	<!-- librerias bootstrap5.3 -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- librerias de select2 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+	 
 	<link rel="stylesheet" href="./assets/lib/feather/feather.css">
 	<link rel="stylesheet" href="./assets/lib/themify-icons/themify-icons.css">
 	<link rel="stylesheet" href="./assets/css/fontawesome-5.15.4/css/fontawesome.min.css">
 	<link rel="stylesheet" href="./assets/lib/mdi/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="./assets/css/icons.css">
 	<link rel="stylesheet" href="./assets/css/main.min.css">
+
+ 
+	 
 </head>
 
 <body>
@@ -134,136 +142,7 @@
 			<nav id="sidebar" class="sidebar sidebar-offcanvas">
 				<ul id="menuContainer" class="nav"></ul> <!-- Aquí se insertará el menú dinámico -->
 			</nav>
-			<!-- <nav id="sidebar" class="sidebar sidebar-offcanvas">
-				<ul class="nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">
-							<i class="icon-dashboard-2 menu-icon"></i>
-							<span class="menu-title">Dashboard</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#Settings" aria-expanded="false"
-							aria-controls="ui-basic">
-							<i class="icon-gear menu-icon"></i>
-							<span class="menu-title">Settings</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="Settings">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#l">Lorem Ipsun Dolor</a></li>
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#Costumers" aria-expanded="false"
-							aria-controls="form-elements">
-							<i class="icon-person menu-icon"></i>
-							<span class="menu-title">Costumers</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="Costumers">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#Agreements" aria-expanded="false"
-							aria-controls="charts">
-							<i class="icon-bookmark-empty menu-icon"></i>
-							<span class="menu-title">Agreements</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="Agreements">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#AWBStockManager" aria-expanded="false"
-							aria-controls="AWBStockManager">
-							<i class="icon-file-earmark-check menu-icon"></i>
-							<span class="menu-title">AWB Stock Manager</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="AWBStockManager">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#SalesReservation" aria-expanded="false"
-							aria-controls="icons">
-							<i class="icon-receipt menu-icon"></i>
-							<span class="menu-title">Sales & Reservation</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="SalesReservation">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolors</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#Forwarding" aria-expanded="false" aria-controls="auth">
-							<i class="icon-airbus menu-icon"></i>
-							<span class="menu-title">Forwarding</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="Forwarding">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#"> Lorem Ipsun Dolor</a></li>
-								<li class="nav-item"> <a class="nav-link" href="#"> Lorem Ipsun Dolor </a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="collapse" href="#SalesRegister" aria-expanded="false"
-							aria-controls="SalesRegister">
-							<i class="icon-clipboard-data menu-icon"></i>
-							<span class="menu-title">Sales Register</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="SalesRegister">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							<i class="bi bi-bar-chart-line-fill menu-icon"></i>
-							<span class="menu-title">Reports</span>
-						</a>
-					</li>
-					<li class="nav-item ">
-						<a class="nav-link" href="#">
-							<i class="icon-search menu-icon"></i>
-							<span class="menu-title">Search</span>
-						</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" data-bs-toggle="collapse" href="#testActive" aria-expanded="false"
-							aria-controls="SalesRegister">
-							<i class="icon-clipboard-data menu-icon"></i>
-							<span class="menu-title">Test Active</span>
-							<i class="menu-arrow"></i>
-						</a>
-						<div class="collapse" id="testActive">
-							<ul class="nav flex-column sub-menu">
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-								<li class="nav-item"> <a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav> -->
+			  
 			<!-- partial -->
 			<div class="main-panel bg-success-subtle">
 				<div class="content-wrapper">
@@ -416,7 +295,23 @@
 												<div class="invalid-feedback">Example invalid form file feedback</div>
 											</div>
 										</div>
-										 
+
+										<!-- AQUI SE AGREGA EL SELECT2 -->
+										<div class="col-12">
+											<div class="form-group">
+												<select class="form-select" id="single-select-field" data-placeholder="Choose one thing" required>
+													<option></option>
+													<option>Reactive</option>
+													<option>Solution</option>
+													<option>Conglomeration</option>
+													<option>Algoritm</option>
+													<option>Holistic</option>
+												</select>
+												<div class="invalid-feedback">
+													Select is required.
+												</div>
+												</div>
+										</div>
 										<div class="form-group">
 											<label for="exampleInputCity1">City</label>
 											<input type="text" class="form-control" id="exampleInputCity1" placeholder="Location" required>
@@ -959,6 +854,8 @@
 	<script src="./assets/lib/jQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/menu.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 	<script src="./assets/js/off-camvas.js"></script>
 	<script src="./assets/js/settings.js"></script>
 	<script src="./assets/js/template.js"></script>
@@ -981,6 +878,13 @@
 				});
 			}, false);
 		})();
+	</script>
+	<script>
+		$('#single-select-field').select2({
+				theme: "bootstrap-5",
+				width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+				placeholder: $(this).data('placeholder'),
+			});
 	</script>
 
 </body>

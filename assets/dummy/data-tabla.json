@@ -1,0 +1,182 @@
+[
+  {
+    "Bkg": "BK001",
+    "GsaName": "Global Cargo Ltd.",
+    "NumBkg": 5,
+    "Kg": 1200,
+    "SalesUSD": 5000,
+    "CostUSD": 3500,
+    "MarginUSD": 1500
+  },
+  {
+    "Bkg": "BK002",
+    "GsaName": "Air Freight Co.",
+    "NumBkg": 3,
+    "Kg": 800,
+    "SalesUSD": 3200,
+    "CostUSD": 2000,
+    "MarginUSD": 1200
+  },
+  {
+    "Bkg": "BK003",
+    "GsaName": "Sky Logistics",
+    "NumBkg": 7,
+    "Kg": 1500,
+    "SalesUSD": 7200,
+    "CostUSD": 5000,
+    "MarginUSD": 2200
+  },
+  {
+    "Bkg": "BK004",
+    "GsaName": "Cargo Express",
+    "NumBkg": 2,
+    "Kg": 600,
+    "SalesUSD": 2100,
+    "CostUSD": 1400,
+    "MarginUSD": 700
+  },
+  {
+    "Bkg": "BK005",
+    "GsaName": "Fast Air Transport",
+    "NumBkg": 6,
+    "Kg": 1300,
+    "SalesUSD": 6800,
+    "CostUSD": 4900,
+    "MarginUSD": 1900
+  },
+  {
+    "Bkg": "BK006",
+    "GsaName": "Global Cargo Ltd.",
+    "NumBkg": 4,
+    "Kg": 1100,
+    "SalesUSD": 4500,
+    "CostUSD": 3100,
+    "MarginUSD": 1400
+  },
+  {
+    "Bkg": "BK007",
+    "GsaName": "Air Freight Co.",
+    "NumBkg": 8,
+    "Kg": 1800,
+    "SalesUSD": 9000,
+    "CostUSD": 6700,
+    "MarginUSD": 2300
+  },
+  {
+    "Bkg": "BK008",
+    "GsaName": "Sky Logistics",
+    "NumBkg": 3,
+    "Kg": 750,
+    "SalesUSD": 2900,
+    "CostUSD": 2000,
+    "MarginUSD": 900
+  },
+  {
+    "Bkg": "BK009",
+    "GsaName": "Cargo Express",
+    "NumBkg": 5,
+    "Kg": 1400,
+    "SalesUSD": 6000,
+    "CostUSD": 4300,
+    "MarginUSD": 1700
+  },
+  {
+    "Bkg": "BK010",
+    "GsaName": "Fast Air Transport",
+    "NumBkg": 2,
+    "Kg": 550,
+    "SalesUSD": 1800,
+    "CostUSD": 1200,
+    "MarginUSD": 600
+  },
+  {
+    "Bkg": "BK011",
+    "GsaName": "Global Cargo Ltd.",
+    "NumBkg": 9,
+    "Kg": 2100,
+    "SalesUSD": 10200,
+    "CostUSD": 7800,
+    "MarginUSD": 2400
+  },
+  {
+    "Bkg": "BK012",
+    "GsaName": "Air Freight Co.",
+    "NumBkg": 4,
+    "Kg": 1000,
+    "SalesUSD": 4200,
+    "CostUSD": 2900,
+    "MarginUSD": 1300
+  },
+  {
+    "Bkg": "BK013",
+    "GsaName": "Sky Logistics",
+    "NumBkg": 7,
+    "Kg": 1700,
+    "SalesUSD": 7700,
+    "CostUSD": 5500,
+    "MarginUSD": 2200
+  },
+  {
+    "Bkg": "BK014",
+    "GsaName": "Cargo Express",
+    "NumBkg": 6,
+    "Kg": 1600,
+    "SalesUSD": 7200,
+    "CostUSD": 5000,
+    "MarginUSD": 2200
+  },
+  {
+    "Bkg": "BK015",
+    "GsaName": "Fast Air Transport",
+    "NumBkg": 3,
+    "Kg": 900,
+    "SalesUSD": 3300,
+    "CostUSD": 2300,
+    "MarginUSD": 1000
+  },
+  {
+    "Bkg": "BK016",
+    "GsaName": "Global Cargo Ltd.",
+    "NumBkg": 5,
+    "Kg": 1200,
+    "SalesUSD": 5000,
+    "CostUSD": 3500,
+    "MarginUSD": 1500
+  },
+  {
+    "Bkg": "BK017",
+    "GsaName": "Air Freight Co.",
+    "NumBkg": 4,
+    "Kg": 1100,
+    "SalesUSD": 4600,
+    "CostUSD": 3200,
+    "MarginUSD": 1400
+  },
+  {
+    "Bkg": "BK018",
+    "GsaName": "Sky Logistics",
+    "NumBkg": 8,
+    "Kg": 2000,
+    "SalesUSD": 9600,
+    "CostUSD": 7200,
+    "MarginUSD": 2400
+  },
+  {
+    "Bkg": "BK019",
+    "GsaName": "Cargo Express",
+    "NumBkg": 2,
+    "Kg": 700,
+    "SalesUSD": 2500,
+    "CostUSD": 1700,
+    "MarginUSD": 800
+  },
+  {
+    "Bkg": "BK020",
+    "GsaName": "Fast Air Transport",
+    "NumBkg": 6,
+    "Kg": 1400,
+    "SalesUSD": 6800,
+    "CostUSD": 4800,
+    "MarginUSD": 2000
+  }
+]
