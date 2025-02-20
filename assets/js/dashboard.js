@@ -1,31 +1,64 @@
 console.log("%c<<< load dashboard.js >>>", "background: #cff4fc; color:#052c65; padding: 2px 5px;");
-/*
-		JAVASCRIPT PURO - Manejo de validaciones en formularios
-		Este código aplica validaciones personalizadas en los formularios con la clase 'needs-validation'
-*/
-(function () {
-	'use strict';
 
-	window.addEventListener('load', function () {
-		var forms = document.getElementsByClassName('needs-validation');
-
-		Array.prototype.filter.call(forms, function (form) {
-			form.addEventListener('submit', function (event) {
-				if (form.checkValidity() === false) {
-					event.preventDefault();
-					event.stopPropagation();
-				}
-				form.classList.add('was-validated');
-			}, false);
-		});
-	}, false);
-})();
-
-/*
-		JAVASCRIPT PURO - Carga de datos en una tabla usando DataTables
-		Este código obtiene datos desde un archivo JSON y los usa para llenar una tabla con funcionalidades de búsqueda, paginación y ordenamiento.
-*/
 document.addEventListener("DOMContentLoaded", function () {
+
+	// Configuración del clima
+	const apiKey = '5604bcc2-eefa-11ef-85cb-0242ac130003-5604bd30-eefa-11ef-85cb-0242ac130003';  // Reemplaza con tu clave real de StormGlass
+	const lat = -33.4489; // Latitud de Santiago, Chile
+	const lng = -70.6693; // Longitud de Santiago, Chile
+	const params = 'airTemperature'; // Parámetro para obtener temperatura
+
+	async function getWeather() {
+		try {
+			const response = await fetch(`https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`, {
+				headers: { 'Authorization': apiKey }
+			});
+
+			const data = await response.json();
+			console.log("%c<<< Weather Data >>>", "color: blue; font-weight: bold;", data);
+
+			if (data.hours && data.hours.length > 0) {
+				let temperature = data.hours[0].airTemperature.noaa ?? "--";
+
+				// Redondear temperatura
+				if (typeof temperature === "number") {
+					temperature = Math.round(temperature);
+				}
+
+				// Actualizar elementos en la UI
+				document.getElementById('temp').innerHTML = `<i class="bi bi-brightness-high"></i> ${temperature}<sup>°C</sup>`;
+				document.getElementById('city').textContent = "Santiago";
+				document.getElementById('area').textContent = "Chile";
+			} else {
+				document.getElementById('city').textContent = "No disponible";
+				document.getElementById('area').textContent = "No disponible";
+			}
+		} catch (error) {
+			console.error('Error obteniendo datos del clima:', error);
+			document.getElementById('city').textContent = "Error al cargar";
+		}
+	}
+
+	// Llamar a la función para obtener el clima
+	getWeather();
+
+	/*
+		JAVASCRIPT PURO - Manejo de validaciones en formularios
+	*/
+	var forms = document.getElementsByClassName('needs-validation');
+	Array.prototype.filter.call(forms, function (form) {
+		form.addEventListener('submit', function (event) {
+			if (form.checkValidity() === false) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+		}, false);
+	});
+
+	/*
+		JAVASCRIPT PURO - Carga de datos en una tabla usando DataTables
+	*/
 	fetch('./assets/dummy/data-tabla.json')
 		.then(response => response.json())
 		.then(data => {
@@ -33,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			$('#dataTable').DataTable({
 				data: data,
 				columns: [
-					{ data: null, render: function () { return '<input type="checkbox" class="row-checkbox">'; } },
+					//{ data: null, render: function () { return '<input type="checkbox" class="row-checkbox">'; } },
 					{ data: "Bkg" },
 					{ data: "GsaName" },
 					{ data: "NumBkg" },
@@ -57,44 +90,39 @@ document.addEventListener("DOMContentLoaded", function () {
 		.catch(error => console.error("Error cargando JSON:", error));
 
 	/*
-			JAVASCRIPT PURO - Carga de datos en un Select2
-			Obtiene datos desde un archivo JSON y los usa para poblar un select con la librería Select2.
+		Carga de datos en un Select2
 	*/
 	fetch('./assets/dummy/data-tabla.json')
 		.then(response => response.json())
 		.then(data => {
 			let selectData = data.map(item => ({
-				id: item.Bkg,  // ID único
-				text: `${item.GsaName} - ${item.Bkg}`, // Mostrar ambos valores
-				bkg: item.Bkg // Guardar el Bkg como dato extra
+				id: item.Bkg,
+				text: `${item.GsaName} - ${item.Bkg}`,
+				bkg: item.Bkg
 			}));
 
-			$('#selectGsa').select2({
+			$('#selectGsa, #filterSelect2').select2({
 				theme: 'bootstrap-5',
 				data: selectData,
 				placeholder: "Selecciona item",
 				dropdownAutoWidth: true,
 				width: '100%',
 				allowClear: true,
-
-				// Personaliza cómo se muestran las opciones en el desplegable
 				templateResult: function (data) {
-					if (!data.id) return data.text; // Evita errores al cargar
+					if (!data.id) return data.text;
 					return $(`<span>${data.text}</span>`);
 				},
-
-				// Personaliza cómo se muestra la opción seleccionada
 				templateSelection: function (data) {
 					return data.text;
 				}
 			});
 		})
 		.catch(error => console.error("Error cargando JSON:", error));
+
 });
 
 /*
-		JQUERY - Manejo de clases en la barra de navegación
-		Ajusta clases en la barra de navegación dependiendo de si tiene la clase 'fixed-top' o no.
+	JQUERY - Manejo de clases en la barra de navegación
 */
 (function ($) {
 	'use strict';
@@ -111,4 +139,3 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 })(jQuery);
-
