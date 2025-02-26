@@ -21,6 +21,13 @@
 	<link rel="stylesheet" href="./assets/css/fontawesome-5.15.4/css/fontawesome.min.css">
 	<link rel="stylesheet" href="./assets/lib/mdi/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="./assets/css/icons.css">
+
+	<!-- librerias de select2 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+
 	<link rel="stylesheet" href="./assets/css/main.min.css">
 </head>
 
@@ -169,30 +176,308 @@
 												aria-selected="false" tabindex="-1">Forwarding</a>
 										</li>
 									</ul>
+
+
 									<div class="tab-content">
 										<div class="tab-pane fade show active" id="Booking" role="tabpanel" aria-labelledby="Booking-tab">
-										</div>
+											<h4 class="card-title">Default form</h4>
+											<p class="card-description"> Basic form layout </p>
+											
+											<div class="col-12 my-5" >
+												<div class="accordion accordion-bordered" id="accordion-2" role="tablist">
+													<div class="card">
+														<div class="card-header" role="tab" id="heading-4">
+															<h6 class="mb-0">
+																<a data-bs-toggle="collapse" href="#general-information" aria-expanded="false" aria-controls="general-information" class="collapsed">
+																	General Information
+																</a>
+															</h6>
+														</div>
+														<div id="general-information" class="collapse" role="tabpanel" aria-labelledby="heading-4" data-parent="#general-information">
+															<div class="card-body">
+																<div class="row g-5 my-4">
+																	<div class="col-7" id="">
+																		<form id="" class="forms-sample needs-validation" novalidate>
+																
+																
+																			<div class="form-group row">
+																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Owner/GSA <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<select id="filterSelect2" class="form-select" aria-label="Default select example"></select>
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="editDeparture" class="col-sm-3 col-form-label">Booking Date <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<input type="datetime-local" class="form-control" id="editDeparture">
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">AWB</label>
+																				<div class="col-sm-2">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="">
+																				</div>
+																				<div class="col-sm-7">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="">
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Customer <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<select id="form-select-2" class="form-select" aria-label="Default select example">
+																						<option></option>
+																						<option>Reactive</option>
+																						<option>Solution</option>
+																						<option>Conglomeration</option>
+																						<option>Algoritm</option>
+																						<option>Holistic</option>
+																					</select>
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Sales Person <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<select class="form-select">
+																						<option>America</option>
+																						<option>Italy</option>
+																						<option>Russia</option>
+																						<option>Britain</option>
+																					</select>
+																				</div>
+																			</div>
+																
+																			<div class="row my-4">
+																				<div class="col-12">
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+																						<label class="form-check-label" for="inlineRadio1">Loose</label>
+																					</div>
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+																						<label class="form-check-label" for="inlineRadio2">Pallet</label>
+																					</div>
+																
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+																						<label class="form-check-label" for="inlineRadio1">Kg</label>
+																					</div>
+																					<div class="form-check form-check-inline">
+																						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+																						<label class="form-check-label" for="inlineRadio2">Lbs</label>
+																					</div>
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Product</label>
+																				<div class="col-sm-9">
+																					<select class="form-select">
+																						<option>America</option>
+																						<option>Italy</option>
+																						<option>Russia</option>
+																						<option>Britain</option>
+																					</select>
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Commodity</label>
+																				<div class="col-sm-9">
+																					<select class="form-select">
+																						<option>America</option>
+																						<option>Italy</option>
+																						<option>Russia</option>
+																						<option>Britain</option>
+																					</select>
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Lorerm Emmet</label>
+																				<div class="col-sm-5">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																				</div>
+																				<div class="col-sm-4">
+																					<button id="" type="button" class="btn btn-type btn-gsa-primary btn-sm"
+																						onclick="window.location.href='dashboard.html'">Detail Pcs/Pallets</button>
+																				</div>
+																			</div>
+																
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Gross <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Chw <span style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Vol M3 <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																				</div>
+																			</div>
+																
+																			<div class="form-group row">
+																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Remarks <span
+																						style="color:red;">*</span></label>
+																				<div class="col-sm-9">
+																					<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+																				</div>
+																			</div>
+																
+																		</form><!--./forms-sample needs-validation-->
+																	</div>
+																	<div class="col-5" id="">
+																		<div class="form-group row">
+																			<label for="exampleInputUsername2" class="col-sm-4 col-form-label">Booking Status<span
+																					style="color:red;">*</span></label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																			</div>
+																		</div>
+																
+																		<div class="form-group row">
+																			<label for="exampleInputUsername2" class="col-sm-4 col-form-label">Billing Status<span
+																					style="color:red;">*</span></label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																			</div>
+																		</div>
+																
+																		<div class="form-group row">
+																			<label for="exampleSelectGender" class="col-sm-4 col-form-label">Follow up Status</label>
+																			<div class="col-sm-8">
+																				<select class="form-select">
+																					<option>America</option>
+																					<option>Italy</option>
+																					<option>Russia</option>
+																					<option>Britain</option>
+																				</select>
+																			</div>
+																		</div>
+																
+																		<div class="row my-4">
+																			<div class="col-12">
+																
+																				<div class="form-group row">
+																					<label for="exampleInputUsername2" class="col-sm-4 col-form-label">AWB retrieved<span
+																							style="color:red;">*</span></label>
+																					<div class="col-sm-8">
+																						<div class="form-check form-check-inline">
+																							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+																							<label class="form-check-label" for="inlineRadio1">Y</label>
+																						</div>
+																						<div class="form-check form-check-inline">
+																							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+																							<label class="form-check-label" for="inlineRadio2">N</label>
+																						</div>
+																					</div>
+																				</div>
+																
+																
+																			</div>
+																		</div>
+																
+																
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card">
+														<div class="card-header" role="tab" id="heading-5">
+															<h6 class="mb-0">
+																<a class="collapsed" data-bs-toggle="collapse" href="#sales-information" aria-expanded="false" aria-controls="sales-information">
+																	Sales Information
+																</a>
+															</h6>
+														</div>
+														<div id="sales-information" class="collapse" role="tabpanel" aria-labelledby="heading-5" data-parent="#sales-information">
+															<div class="card-body">
+																<form class="forms-sample">
+																
+																
+																	<div class="form-group row">
+																		<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Lorerm Emmet <span
+																				style="color:red;">*</span></label>
+																		<div class="col-sm-9">
+																			<input type="text" class="form-control" id="exampleInputUsername2" placeholder="Lorem Ipsun emmet">
+																		</div>
+																	</div>
+																
+																	<div class="form-group">
+																		<label for="exampleInputUsername1">Username</label>
+																		<input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleInputEmail1">Email address</label>
+																		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleInputPassword1">Password</label>
+																		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+																	</div>
+																	<div class="form-group">
+																		<label for="exampleInputConfirmPassword1">Confirm Password</label>
+																		<input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+																	</div>
+																	<div class="form-check">
+																		<label class="form-check-label text-muted">
+																			<input type="checkbox" class="form-check-input" required="">
+																			<a href="#">Remember me</a>
+																			<i class="input-helper"></i><i class="input-helper"></i><i class="input-helper"></i></label>
+																	</div>
+																	<div class="row">
+																		<div class="col-12 mt-3 text-end">
+																			<button class="btn btn-type btn-gsa-danger bt-sm">Cancel</button>
+																			<button type="submit" class="btn btn-type btn-gsa-success bt-sm">Submit</button>
+																		</div>
+																	</div>
+																
+																
+																</form>
+															</div>
+														</div>
+													</div> 
+												</div>
+											</div>
+
+											
+
+
+
+											
+
+										</div><!--./tab-pane fade-->
 										<div class="tab-pane fade" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
 											
-										</div>
+										</div><!--./tab-pane fade-->
 										<div class="tab-pane fade" id="RequestMgr" role="tabpanel" aria-labelledby="contact-tab">
-										</div>
+										</div><!--./tab-pane fade-->
 										<div class="tab-pane fade" id="CCAs" role="tabpanel" aria-labelledby="contact-tab">
-										</div>
+										</div><!--./tab-pane fade-->
 										<div class="tab-pane fade" id="Forwarding" role="tabpanel" aria-labelledby="contact-tab">
-										</div>
+										</div><!--./tab-pane fade-->
 									</div>
-
-
-
-
-
-
-
-
-
-
-
+									
 
 
 								</div>
@@ -222,10 +507,25 @@
 	<script src="./assets/lib/jQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/menu.js"></script>
+
+	<!-- lib select2 -->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 	<script src="./assets/js/off-camvas.js"></script>
 	<script src="./assets/js/settings.js"></script>
 	<script src="./assets/js/template.js"></script>
 	<script src="./assets/js/dashboard.js"></script>
+	<script>
+		$(document).ready(function () {
+				$('#form-select-2').select2({
+					theme: 'bootstrap-5', 
+					placeholder: "Selecciona item",
+					dropdownAutoWidth: true,
+					width: '100%',
+					allowClear: true
+				});
+			});
+	</script>
 </body>
 
 </html>
