@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		.catch(error => console.error("Error cargando JSON:", error));
 
 	/*
-		Carga de datos en un Select2
-	*/
+				Carga de datos en todos los Select2 dinámicos
+		*/
 	fetch('./assets/dummy/data-tabla.json')
 		.then(response => response.json())
 		.then(data => {
@@ -101,25 +101,28 @@ document.addEventListener("DOMContentLoaded", function () {
 				bkg: item.Bkg
 			}));
 
-			$('#selectGsa, #filterSelect2').select2({
-				theme: 'bootstrap-5',
-				data: selectData,
-				placeholder: "Selecciona item",
-				dropdownAutoWidth: true,
-				width: '100%',
-				allowClear: true,
-				templateResult: function (data) {
-					if (!data.id) return data.text;
-					return $(`<span>${data.text}</span>`);
-				},
-				templateSelection: function (data) {
-					return data.text;
-				}
+			// Inicializa Select2 en todos los selects con la clase 'select2-dynamic'
+			document.querySelectorAll('.select2-dynamic').forEach(select => {
+				$(select).select2({
+					theme: 'bootstrap-5',
+					data: selectData,
+					placeholder: "Selecciona item",
+					dropdownAutoWidth: true,
+					width: '100%',
+					allowClear: true,
+					templateResult: function (data) {
+						if (!data.id) return data.text;
+						return $(`<span>${data.text}</span>`);
+					},
+					templateSelection: function (data) {
+						return data.text;
+					}
+				});
 			});
 		})
 		.catch(error => console.error("Error cargando JSON:", error));
 
-});
+	});
 
 /*
 	JQUERY - Manejo de clases en la barra de navegación
