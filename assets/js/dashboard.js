@@ -108,8 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
 					data: selectData,
 					placeholder: "Selecciona item",
 					dropdownAutoWidth: true,
-					width: '100%',
+					width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style', 
 					allowClear: true,
+					dropdownParent: $(select).parent(), // Corrige el menú dentro del input-group
 					templateResult: function (data) {
 						if (!data.id) return data.text;
 						return $(`<span>${data.text}</span>`);
