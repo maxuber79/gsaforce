@@ -150,7 +150,7 @@
 								<div class="card-body">
 									<h4 class="card-title">Booking</h4>
 									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nostrum.</p>
-										<div class="row mx-0 ">
+										<div class="row mx-0">
 											<div class="col-12">
 												<a class="button-accordeon" data-bs-toggle="collapse" href="#iformation-general" role="button" aria-expanded="false" aria-controls="iformation-general">
 													Information General <i class="bi bi-question-circle-fill ms-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Click, you can use more information general"></i>
@@ -431,7 +431,6 @@
 												</div>
 											</div>
 										</div>
-
 										<div class="row mx-0">
 											<div class="col-12">
 												<ul class="nav nav-tabs nav-fill" role="tablist">
@@ -533,15 +532,15 @@
 																	</div>
 																</form>
 															</div>
-															<div id="border-2" class="col-12 mb-3">
+															<div class="col-12 mb-3">
 																<form>
 																	<div class="row">
-																		<div id="border-3" class="col-md-12">
+																		<div class="col-md-12">
 																			<div class="form-group">
 																				<label for="exampleInputUsername2" class="col-sm-4 col-form-label">Other Charges/Discount</label>
 																			</div>
 																		</div>
-																		<div id="border-3" class="col-sm-12 col-md-3 d-flex align-items-center">
+																		<div class="col-sm-12 col-md-3 d-flex align-items-center">
 																			<div class="form-group">
 																				<div class="row w-100 align-items-center">
 																					<div class="col-md-12 d-flex align-items-center">
@@ -619,19 +618,19 @@
 																</form>
 															</div>
 
-															<div id="border-2" class="col-12 mb-3">
+															<div class="col-12 mb-3">
 																<form>
 																	<div class="row mx-auto">
-																		<div id="border-2" class="col-12">
+																		<div class="col-12">
 																			<div class="form-group row g-0 align-items-center">
 																				<label for="exampleInputUsername2" class="col-md-3 col-form-label">Shipment Route Information</label>
 																				<div class="col-md-9 d-flex align-items-center">
-																					<a href="#" class="bi bi-plus-circle-fill mx-1 link-success"></a>
-																					<a href="#" class="bi bi-dash-circle-fill mx-1 link-danger"></a>
+																					<a href="#" class="bi bi-plus-circle-fill mx-1 link-success" data-bs-toggle="modal" data-bs-target="#segmentAdd" ></a>
+																					<a href="#" onclick="event.preventDefault();" class="bi bi-dash-circle-fill mx-1 link-danger"></a>
 																				</div>
 																			</div>
 																		</div> 
-																		<div id="border-2" class="col-md-12">
+																		<div class="col-md-12">
 																			<div class="table-responsive">
 																				<table class="table table-default">
 																					<thead>
@@ -696,7 +695,50 @@
 															</div>
 
 															<div class="col-12">
-																Audit Information
+																<form>
+																	<div class="row mx-auto">
+																		<div class="col-12">
+																			<div class="form-group row align-items-center">
+																				<label for="exampleInputUsername2">Audit Information</label>																				 
+																			</div>
+
+																			<div class="row g-3 align-items-center">
+																				<div class="col-auto">
+																					<label for="inputPassword6" class="col-form-label">Creation: </label>
+																				</div>
+																				<div class="col-auto">
+																					<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="09/12/2019 10:37:59">
+																				</div> 
+																			</div>
+
+																			<div class="row g-3 align-items-center">
+																				<div class="col-auto">
+																					<label for="inputPassword6" class="col-form-label">Modification: </label>
+																				</div>
+																				<div class="col-auto">
+																					<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="09/12/2019 10:37:59">
+																				</div>
+																			</div>
+
+																			<div class="row g-3 align-items-center">
+																				<div class="col-auto">
+																					<label for="inputPassword6" class="col-form-label">User: </label>
+																				</div>
+																				<div class="col-auto">
+																					<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="ARhernandez">
+																				</div>
+																				<div class="col-auto">
+																					<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="LRovegno">
+																				</div>
+																			</div>
+
+																			 
+
+																		</div>
+																	 
+																		 
+																	</div>
+																</form>
 															</div>
 
 
@@ -738,7 +780,9 @@
 	</div>
 	<!-- container-scroller -->
 
-	<!-- Modal -->
+	<!-- Modals -->
+
+	<!-- Modal Detail Pcs Pallets -->
 	<div class="modal fade" id="detailPcsPallets" tabindex="-1" aria-labelledby="detailPcsPalletsLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-xl">
 			<div class="modal-content modal-primary">
@@ -837,7 +881,7 @@
 		</div>
 	</div>
 
-
+	<!-- Modal Search Costumer -->
 	<div class="modal fade" id="searchCostumer" tabindex="-1" aria-labelledby="searchCostumerLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-xl">
 			<div class="modal-content modal-primary">
@@ -976,6 +1020,33 @@
 						<button class="btn btn-type btn-gsa-danger btn-md" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
 						<button type="submit" class="btn btn-type btn-gsa-success btn-md">Submit</button>
 				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Search Costumer -->
+	<div class="modal fade" id="segmentAdd" tabindex="-1" aria-labelledby="segmentAddLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content modal-primary">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="segmentAddLabel">Search Costumer</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore sunt fuga, dolorum dicta non exercitationem
+								perferendis nostrum, cumque tempore amet tenetur doloremque consectetur est illo dolore explicabo natus. Voluptate
+								dignissimos saepe nihil quibusdam non nostrum. Provident tempore commodi aut qui unde! Eaque mollitia eveniet tempora
+								eius nihil quidem itaque minima vero sint nesciunt, voluptas laborum soluta error sed culpa fugit, quasi officia,
+								libero nemo earum numquam modi! Explicabo perferendis praesentium nisi. Laborum libero, magni temporibus iusto
+								pariatur aliquam nesciunt dolor rem nobis, ipsam, quo exercitationem provident? Minus, ut, deserunt obcaecati aliquam
+								nulla mollitia libero laudantium, quidem vero officia harum eos?</p>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-type btn-gsa-danger btn-md" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+					<button type="submit" class="btn btn-type btn-gsa-success btn-md">Submit</button>
+				</div> 
 			</div>
 		</div>
 	</div>
