@@ -139,7 +139,104 @@
 			</div>
 			<!-- partial:partials/_sidebar.html -->
 			<nav id="sidebar" class="sidebar sidebar-offcanvas">
-				<ul id="menuContainer" class="nav"></ul> <!-- Aquí se insertará el menú dinámico -->
+				<ul id="menuContainer" class="nav">
+					<li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="icon-dashboard-2 menu-icon"></i><span
+								class="menu-title">Dashboard</span></a></li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse1" aria-expanded="false">
+							<i class="icon-gear menu-icon"></i>
+							<span class="menu-title">Settings</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse1">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="forms-elements.html">Forms Elements</a></li>
+								<li class="nav-item"><a class="nav-link" href="tables.html">Tables</a></li>
+								<li class="nav-item"><a class="nav-link" href="buttons.html">Buttons</a></li>
+								<li class="nav-item"><a class="nav-link" href="tabs.html">Tabs</a></li>
+								<li class="nav-item"><a class="nav-link" href="typography.html">Typography</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse2" aria-expanded="false">
+							<i class="icon-person menu-icon"></i>
+							<span class="menu-title">Costumers</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse2">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse3" aria-expanded="false">
+							<i class="icon-bookmark-empty menu-icon"></i>
+							<span class="menu-title">Agreements</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse3">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse4" aria-expanded="false">
+							<i class="icon-file-earmark-check menu-icon"></i>
+							<span class="menu-title">AWB Stock Manager</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse4">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse5" aria-expanded="false">
+							<i class="icon-receipt menu-icon"></i>
+							<span class="menu-title">Sales &amp; Reservation</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse5">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse6" aria-expanded="false">
+							<i class="icon-airbus menu-icon"></i>
+							<span class="menu-title">Forwarding</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse6">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-bs-toggle="collapse" href="#menuCollapse7" aria-expanded="false">
+							<i class="icon-clipboard-data menu-icon"></i>
+							<span class="menu-title">Sales Register</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="menuCollapse7">
+							<ul class="nav flex-column sub-menu">
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Lorem Ipsun Dolor</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bar-chart-line-fill menu-icon"></i><span
+								class="menu-title">Reports</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="icon-search menu-icon"></i><span
+								class="menu-title">Search</span></a></li>
+				</ul>
 			</nav>
 			<!-- partial -->
 			<div class="main-panel bg-success-subtle">
@@ -165,8 +262,6 @@
 																<div class="row">
 																	<div class="col-sm-12 col-md-6" >
 																		<form id="" class="forms-sample needs-validation" novalidate>
-													
-													
 																			<div class="form-group row">
 																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Owner/GSA <span
 																						style="color:red;">*</span></label>
@@ -192,9 +287,6 @@
 																					<input type="text" class="form-control" id="exampleInputUsername2" placeholder="">
 																				</div>
 																			</div>
-
-
-
 																			<div class="form-group row">
 																				<label for="exampleSelectGender" class="col-sm-12 col-md-3 col-form-label">Ori/Des <span style="color:red;">*</span></label>
 																				<div class="col-sm-12 col-md-3">
@@ -222,17 +314,6 @@
 																					</select>
 																				</div>
 																			</div>
-
-																			<!-- <div class="input-group">
-																				<select class="form-select select2-dynamic w-auto" id="inputGroupSelect04" aria-label="Example select with button addon" style="flex: 1 1 auto;">
-																					<option selected>Choose...</option>
-																					<option value="1">One</option>
-																					<option value="2">Two</option>
-																					<option value="3">Three</option>
-																				</select>
-																				<button class="btn btn-outline-secondary" type="button">Button</button>
-																			</div> -->
-
 																			<div class="form-group row align-items-center">
 																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Costumer <span style="color:red;">*</span>
 																				</label>
@@ -248,26 +329,6 @@
 																					</div>
 																				</div>
 																			</div>
-
-
-
-
-													
-																			<!-- <div class="input-group ">
-																				<label for="exampleSelectGender" class=" ">Customer <span style="color:red;">*</span></label>
-																				<div class=" ">
-																					<button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
-																					<select id="form-select-2" class="form-select select2-dynamic  w-auto" aria-label="Default select example">
-																						<option></option>
-																						<option>Reactive</option>
-																						<option>Solution</option>
-																						<option>Conglomeration</option>
-																						<option>Algoritm</option>
-																						<option>Holistic</option>
-																					</select> 
-																				</div>
-																			</div> -->
-													
 																			<div class="form-group row">
 																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Sales Person <span
 																						style="color:red;">*</span></label>
@@ -318,7 +379,6 @@
 																					</select>
 																				</div>
 																			</div>
-													
 																			<div class="form-group row">
 																				<label for="exampleSelectGender" class="col-sm-3 col-form-label">Commodity</label>
 																				<div class="col-sm-9">
@@ -330,7 +390,6 @@
 																					</select>
 																				</div>
 																			</div>
-													
 																			<div class="form-group row">
 																				<label for="exampleInputUsername2" class="col-sm-3 col-form-label">Lorerm Emmet</label>
 																				<div class="col-sm-5">
@@ -340,10 +399,6 @@
 																					<button id="" type="button" class="btn btn-type btn-gsa-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailPcsPallets">Detail Pcs/Pallets</button>
 																				</div>
 																			</div>
-													
-													
-																			
-													
 																		</form><!--./forms-sample needs-validation-->
 																	</div>
 																	<div class="col-sm-12 col-md-6">
@@ -607,8 +662,6 @@
 																					<tbody>
 																					</tbody>
 																				</table>
-
-
 																			</div>
 																		</div>
 																	</div>
@@ -728,20 +781,10 @@
 																					<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="LRovegno">
 																				</div>
 																			</div>
-
-																			 
-
 																		</div>
-																	 
-																		 
 																	</div>
 																</form>
 															</div>
-
-
-
-
-
 														</div>
 													</div><!--./tab-pane fade-->
 													<div class="tab-pane fade" id="AWBManager" role="tabpanel" aria-labelledby="profile-tab">
@@ -1395,17 +1438,6 @@
  
 	<!-- <script src="./assets/js/template.js"></script> -->
 	<script src="./assets/js/dashboard.js"></script>
-	<script>
-		$(document).ready(function () {
-				$('#form-select-2').select2({
-					theme: 'bootstrap-5', 
-					placeholder: "Selecciona item",
-					dropdownAutoWidth: true,
-					width: '100%',
-					allowClear: true
-				});
-			});
-	</script>
 </body>
 
 </html>
