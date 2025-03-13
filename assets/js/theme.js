@@ -74,18 +74,18 @@
 					if (item.subMenu) {
 						let collapseId = `menuCollapse${index}`;
 						menuHTML += `
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#${collapseId}" aria-expanded="false">
-                                    <i class="${item.icon} menu-icon"></i>
-                                    <span class="menu-title">${item.title}</span>
-                                    <i class="menu-arrow"></i>
-                                </a>
-                                <div class="collapse" id="${collapseId}">
-                                    <ul class="nav flex-column sub-menu">
-                                        ${item.subMenu.map(sub => `<li class="nav-item"><a class="nav-link" href="${sub.link}">${sub.title}</a></li>`).join("")}
-                                    </ul>
-                                </div>
-                            </li>`;
+						<li class="nav-item">
+								<a class="nav-link" data-bs-toggle="collapse" href="#${collapseId}" aria-expanded="false">
+										<i class="${item.icon} menu-icon"></i>
+										<span class="menu-title">${item.title}</span>
+										<i class="menu-arrow"></i>
+								</a>
+								<div class="collapse" id="${collapseId}">
+										<ul class="nav flex-column sub-menu">
+												${item.subMenu.map(sub => `<li class="nav-item"><a class="nav-link" href="${sub.link}">${sub.title}</a></li>`).join("")}
+										</ul>
+								</div>
+						</li>`;
 					} else {
 						menuHTML += `<li class="nav-item"><a class="nav-link" href="${item.link}"><i class="${item.icon} menu-icon"></i><span class="menu-title">${item.title}</span></a></li>`;
 					}

@@ -148,8 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				if (pageWrapper) pageWrapper.classList.remove('pt-0');
 				if (navbar) {
-					navbar.classList.remove('pt-5');
-					//navbar.classList.add('mt-3');
+					navbar.classList.remove('pt-5'); 
 				}
 			} else {
 				console.log('NO existe:', $(".navbar").hasClass("fixed-top"));
@@ -158,8 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				if (pageWrapper) pageWrapper.classList.add('pt-0');
 				if (navbar) {
-					navbar.classList.add('pt-5');
-					//navbar.classList.add('mt-3');
+					navbar.classList.add('pt-5'); 
 				}
 			}
 		});
