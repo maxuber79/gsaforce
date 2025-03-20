@@ -18,8 +18,7 @@ phpcs.xml.dist
 /assets/scss/prepros.config
 /assets/prepros.config
 /respaldo
-/assets/scss/*
-guideline.html
+/assets/scss/* 
 disenos/*
 disenos
 
