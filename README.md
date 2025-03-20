@@ -12,8 +12,8 @@
 </p>
 
 # Link demo
-👉 vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)
-
+👉 vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)<br>
+👉 visitar guideline: [link guideline](https://maxuber79.github.io/gsaforce/guideline.html)
 # Starter Theme GSAForce HTML
 El theme es confeccionado en el 2025 es exclusivo, centrado en una web con sidebar menú y top navbar menu, se utiliza iconografías para el despliegue del menú y un buscador para que el usuario encuentre lo que busca en el sitio. La App está diseñado para entregar información de la empresa en sus operaciones y posibilidad de generar documentos. Sus secciones e interacciones con la información son visualizados en su dashboard por medio de tablas, tabs o modales desplegables y se pueden ejecutar desde cualquier dispositivo (Moble, Tablet, Desktop); las secciones en su mayoría ocupan full height en el viewport de cualquier dispositivo.
 
