@@ -1,62 +1,8 @@
+
+console.log("%c<<< load guideline.js >>>", "background: blue; color:#ffffff; padding: 2px 5px; font-weight: bold;");
 document.addEventListener('DOMContentLoaded', () => {
-	/* function myFunction() {
-		// Get the text field
-		var copyText = document.getElementById("myInput");
-	
-		// Select the text field
-		copyText.select();
-		copyText.setSelectionRange(0, 99999); // For mobile devices
-	
-		// Copy the text inside the text field
-		navigator.clipboard.writeText(copyText.value);
-	  
-		// Alert the copied text
-		alert("Copied the text: " + copyText.value);
-	} */
+	//console.log("%c[DOMContentLoaded] guideline.js ejecutado ✅", "color: green; font-weight: bold;");
 
-	/*let text = document.getElementById('myText').innerHTML;
-	const copyContent = async () => {
-	 try {
-		await navigator.clipboard.writeText(text);
-		console.log('Content copied to clipboard');
-	 } catch (err) {
-		console.error('Failed to copy: ', err);
-	 }
-	}*/
-
-	//});/* document.addEventListener */
-
-	/* const progressBar = document.querySelector('.progressBar');
-	const section = document.querySelector('.wrapper-main');
-	//const section = document.getElementsByTagName('body')[0];
-	
-	const scrollProgressBar = () => {
-		let scrollDistance = -(section.getBoundingClientRect().top);
-		let progressPercentage =
-			(scrollDistance /
-				(section.getBoundingClientRect().height -
-					document.documentElement.clientHeight)) * 100;
-	
-		let val = Math.floor(progressPercentage);
-		progressBar.style.width = val + '%';
-	
-		if (val < 0) {
-			progressBar.style.width = '0%';
-		}
-	};
-	
-	window.addEventListener('scroll', scrollProgressBar); */
-
-
-
-	/* window.onscroll = function() {myFunction()};
-	
-	function myFunction() {
-		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-		var scrolled = (winScroll / height) * 100;
-		document.getElementById("myBar").style.width = scrolled + "%";
-	} */
 	window.onscroll = () => {
 		myProgressBar();
 	};
@@ -82,13 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	fetch('https://randomuser.me/api/?results=7')
-		.then(response => response.json())
-		.then(data => {
-			console.log(data.results[0]); // Imprime el primer usuario
-		})
-	.catch(error => console.error('Error:', error));
+	/*
+			Carga de datos en todos los Select2 dinámicos
+	*/
+	const selects = document.querySelectorAll('.select2-dynamic');
 
+	document.querySelectorAll('.select2-dynamic').forEach(select => {
+		$(select).select2({
+			theme: 'bootstrap-5', 
+			placeholder: "Selecciona item",
+			dropdownAutoWidth: true,
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			allowClear: true,
+			dropdownParent: $(select).parent(), // Corrige el menú dentro del input-group
+			templateResult: function (data) {
+				if (!data.id) return data.text;
+				return $(`<span>${data.text}</span>`);
+			},
+			templateSelection: function (data) {
+				return data.text;
+			}
+		});
+	});
 
 	/*
 			JAVASCRIPT PURO - Manejo de validaciones en formularios
@@ -105,99 +66,54 @@ document.addEventListener('DOMContentLoaded', () => {
 			}, false);
 		});
 	}
-
-	/*
-			Carga de datos en todos los Select2 dinámicos
-	*/
-	if (document.querySelector('.select2-dynamic')) {
-		fetch('./assets/dummy/data-tabla.json')
-			.then(response => response.json())
-			.then(data => {
-				let selectData = data.map(item => ({
-					id: item.Bkg,
-					text: `${item.GsaName} - ${item.Bkg}`,
-					bkg: item.Bkg
-				}));
-
-				if (typeof $ !== "undefined" && $.fn.select2) {
-					document.querySelectorAll('.select2-dynamic').forEach(select => {
-						$(select).select2({
-							theme: 'bootstrap-5',
-							data: selectData,
-							placeholder: "Selecciona item",
-							dropdownAutoWidth: true,
-							width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-							allowClear: true,
-							dropdownParent: $(select).parent(),
-							templateResult: function (data) {
-								if (!data.id) return data.text;
-								return $(`<span>${data.text}</span>`);
-							},
-							templateSelection: function (data) {
-								return data.text;
-							}
-						});
-					});
-				}
-			})
-			.catch(error => console.error("Error cargando JSON:", error));
-	}
- 
-	/**
-	 * Scroll top button
-	 */
-	let scrollTop = document.querySelector('.scroll-top');
-
-	function toggleScrollTop() {
-		if (scrollTop) {
-			window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-		}
-	}
-	scrollTop.addEventListener('click', (e) => {
-		e.preventDefault();
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
+	//Copiar texto colores
+	const copyButtons = document.querySelectorAll('.copy-button');
+	
+	// Agrega un controlador de eventos a cada botón
+	copyButtons.forEach( button => {
+		button.addEventListener('click', () => {
+			console.log("%c<<< addEventListener >>>", "color: green; font-weight: bold;", button);
+			copyContent(button); 
 		});
 	});
 
-	window.addEventListener('load', toggleScrollTop);
-	document.addEventListener('scroll', toggleScrollTop);
+	function copyContent(button) {
 
-	/*document.addEventListener('DOMContentLoaded', function () {
-		var myButton = document.getElementById('myButton');
-	  
-		// Activar el tooltip al hacer clic
-		myButton.addEventListener('click', function () {
-			var tooltip = new bootstrap.Tooltip(myButton);
-			tooltip.show();
-	
-			// Desaparecer el tooltip después de 2 segundos
-			setTimeout(function () {
-				tooltip.hide();
-			}, 2000);
-		});*/
-	// Selecciona el elemento que quieres observar
-	/* window.addEventListener('scroll', function () {
-		var div = document.getElementById('hero-zoom');
-		var divRect = div.getBoundingClientRect();
-		var scrollTop = window.scrollY || document.documentElement.scrollTop;
-		var divTop = divRect.top + (scrollTop - 1);
+		let colorHex = button.parentNode.querySelector('.sg-color-value').textContent;
+		console.log('let colorHex:', colorHex)
+		// Intenta copiar al portapapeles
+		try {
+			navigator.clipboard.writeText(colorHex);
+			console.log("%cContent copied to clipboard:", "color: green; font-weight: bold;", colorHex);
 
- 
-		console.table(div.getBoundingClientRect());
-		console.log('%cAltura del div contenedor - divRect.height ---->', 'background: #cfe2ff; color: #084298; padding: 2px 5px;', divRect.height.toFixed() + "px");
-		console.log('%cdivRect top ---->', 'background: #e2e3e5; color: #2b2f32; padding: 2px 5px;', divRect.top.toFixed() + "px");
-		console.log('%cscrollTop ---->', 'background: #fff3cd; color: #664d03; padding: 2px 5px;', scrollTop.toFixed() + "px");
-		console.log('%cPosición superior del div ---->', 'background: #f8d7da; color: #58151c; padding: 2px 5px;', divTop.toFixed() + "px");
-
-		if (scrollTop >= divTop) {
-			console.log(true);
-			//alert('esta dentro',JSON.stringify(scrollTop.toFixed() + "px"), JSON.stringify(divTop.toFixed() + "px"))
-
-		} else {
-			console.log(false)
+			// Mostrar mensaje de éxito al usuario
+			showCopySuccessMessage();
+		} catch (err) {
+			console.error('Failed to copy: ', err);
+			// Mostrar mensaje de error al usuario
+			showCopyFailureMessage();
 		}
+	}
 
-	}); */
+
+	function showCopySuccessMessage() {
+		Swal.fire({
+			title: 'Content copied to clipboard',
+			icon: 'success',
+			timer: 2000, // Duración en milisegundos
+			timerProgressBar: true,
+			showConfirmButton: false
+		});
+	}
+
+	function showCopyFailureMessage() {
+		Swal.fire({
+			title: 'Failed to copy content',
+			text: 'Please try again or copy manually.',
+			icon: 'error',
+			showConfirmButton: true
+		});
+	}
+
+
 });

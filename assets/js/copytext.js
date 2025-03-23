@@ -69,4 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
 			showConfirmButton: true
 		});
 	}
-});
+}); // document.addEventListener
