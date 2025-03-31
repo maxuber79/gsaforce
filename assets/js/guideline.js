@@ -195,4 +195,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.body.classList.toggle('dark-mode', toggle.checked);
 		localStorage.setItem('darkMode', toggle.checked);
 	});
+
+	//const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+	console.log("%c✅ const tooltipTriggerList:", "color: lime; font-weight: bold;", tooltipTriggerList);
+	tooltipTriggerList.forEach( function (tooltipTriggerEl) {
+		new bootstrap.Tooltip(tooltipTriggerEl);
+		const lorem = new bootstrap.Tooltip(tooltipTriggerEl);
+		console.log("%c✅ bootstrap.Tooltip(tooltipTriggerEl):", "color: deeppink; font-weight: bold;", lorem);
+	});
 });
