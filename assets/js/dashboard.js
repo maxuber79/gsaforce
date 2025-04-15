@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			JAVASCRIPT PURO - Carga de datos en una tabla usando DataTables
 	*/
 	if (document.getElementById('dataTable')) {
-		fetch('./assets/dummy/data-tabla.json')
+		fetch('https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-tabla.json')
 			.then(response => response.json())
 			.then(data => {
 				console.log("%c<<< jsonLocal for dataTable >>>", "color: green; font-weight: bold;", data);
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			Carga de datos en todos los Select2 dinámicos
 	*/
 	if (document.querySelector('.select2-dynamic')) {
-		fetch('./assets/dummy/data-tabla.json')
+		fetch('https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/data-tabla.json')
 			.then(response => response.json())
 			.then(data => {
 				let selectData = data.map(item => ({

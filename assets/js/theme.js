@@ -66,7 +66,7 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		const menuContainer = document.getElementById("menuContainer");
 
-		fetch('./assets/dummy/menu.json')
+		fetch('https://raw.githubusercontent.com/maxuber79/gsaforce/refs/heads/main/assets/dummy/menu.json')
 			.then(response => response.json())
 			.then(menuData => {
 				let menuHTML = "";
