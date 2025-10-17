@@ -1,82 +1,124 @@
-<p align="center" style="margin-top:1.5rem;"><img src="./assets/images/icon-gsaforce.svg" idth="100" height="100"></p>
-<!-- <p align="center" style="margin-top:1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.74 155.74" width="100" height="100"><defs><style>.cls-1{fill:#003b71;}.cls-2{fill:#7daed3;}</style></defs><title>icon-gsaforce</title><g id="Capa_2" data-name="Capa 2"><g id="Layer_1" data-name="Layer 1"><polygon class="cls-1" points="134.12 134.1 21.64 134.1 21.64 21.61 66.34 21.61 66.34 0 0 0 0 155.74 155.74 155.74 155.74 91.47 134.12 91.47 134.12 134.1"/><polygon class="cls-2" points="87.95 0 87.95 21.61 118.77 21.61 71.03 69.38 86.78 85.1 134.12 37.76 134.12 69.94 155.74 69.94 155.74 0 87.95 0"/></g></g></svg></p> --><p align="center">
+<div align="center">
+
+# 🧩 GSAForce — HTML Starter Theme
+
+<img src="./assets/images/icon-gsaforce.svg" width="100" height="100" alt="GSAForce Logo"/>
+
+<p>
 	<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white">
-		<img src="https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white"><img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square">
-		<img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat-square&logo=bootstrap&logoColor=white">
-		<img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=flat-square&logo=jquery&logoColor=white">
-		<img src="https://img.shields.io/badge/SASS-hotpink.svg?style=flat-square&logo=SASS&logoColor=white">
-</p>
-<p align="center"><a href="https://github.com/seatonjiang/kratos/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/seatonjiang/kratos?&style=flat-square">
-    </a>		
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square">
+	<img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat-square&logo=bootstrap&logoColor=white">
+	<img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=flat-square&logo=jquery&logoColor=white">
+	<img src="https://img.shields.io/badge/SASS-hotpink.svg?style=flat-square&logo=SASS&logoColor=white">
+	<img src="https://img.shields.io/badge/license-GPLv2-blue?style=flat-square">
 </p>
 
-# Link demo
-👉 vistar demo: [link demo](https://maxuber79.github.io/gsaforce/)<br>
-👉 visitar guideline: [link guideline](https://maxuber79.github.io/gsaforce/guideline.html)
-# Starter Theme GSAForce HTML
-El theme es confeccionado en el 2025 es exclusivo, centrado en una web con sidebar menú y top navbar menu, se utiliza iconografías para el despliegue del menú y un buscador para que el usuario encuentre lo que busca en el sitio. La App está diseñado para entregar información de la empresa en sus operaciones y posibilidad de generar documentos. Sus secciones e interacciones con la información son visualizados en su dashboard por medio de tablas, tabs o modales desplegables y se pueden ejecutar desde cualquier dispositivo (Moble, Tablet, Desktop); las secciones en su mayoría ocupan full height en el viewport de cualquier dispositivo.
+🔗 **Demo:** [https://maxuber79.github.io/gsaforce/](https://maxuber79.github.io/gsaforce/)<br>
+📘 **Guideline:** [https://maxuber79.github.io/gsaforce/guideline.html](https://maxuber79.github.io/gsaforce/guideline.html)
 
-Las interiores poseen un diseño minimalista y personalizada, con una lectura visual centrada en todos los disposotivos con un ancho maximo de un 90% en el viewport del dashboard.  
+</div>
 
-La tipografía es de GoogleFonts “Karla” y sencilla, es legible en una gran variedad de tamaños de pantalla y es adecuada para múltiples idiomas. 
+---
 
-## === GSAForce ===
-- **`Theme Name:`** GSAForce
-- **`Theme URI:`** https://gsaforce.com 
-- **`Author:`** cmunozm
-- **`Version:`** 1.0.0
-- **`Text Domain:`** [www.gsaforce.com](https://gsaforce.com )
-- **`Contributors:`** [www.webmain.cl](https://webmain.cl)
-- **`Requires at least:`** ---
-- **`Tested up to:`**  ---
-- **`Requires JAVASCRIPT:`** ES14 
-- **`Requires CSS:`** CSS3 
-- **`Stable tag:`** 1.0.0
-- **`License:`** GNU General Public License v2 or later.
-- **`License URI:`** LICENSE.
-- **`Tags:`** two-column, custom-menu, sidebar menu, top navbar, custom-dashboard, custom-logo, translation-ready.
+## 🧱 Descripción
 
-## Author:
+**GSAForce** es un tema HTML5 modular y escalable creado en **2025**.  
+Su diseño está centrado en una **interfaz tipo dashboard** con **sidebar**, **top navbar** y componentes visuales adaptativos.  
+Pensado originalmente para un cliente corporativo, puede reutilizarse como base para proyectos en **Angular**, **WordPress**, o frameworks modernos.
 
-cmunozm ( [@mmaxuber79](https://github.com/maxuber79) / [webmain.cl](http://webmain.cl) )
+---
 
-## Summary
+## 🎨 Características principales
 
-Theme de HTML para usar como plantilla inicial para crear temas personalizados en Angular. Utiliza CSS/SCSS, AutoPrefixr, HTML5, JavaScript, Jquery, Modernizr y Bootstrap última versión, para todas las tareas de procesamiento. Sincroniza los cambios entre dispositivos de desarrollo local con BrowserSync.  
+- Interfaz adaptable (mobile, tablet, desktop)
+- Diseño responsive tipo dashboard con menú lateral y barra superior
+- Tipografía [Karla](https://fonts.google.com/specimen/Karla) de Google Fonts
+- Componentes minimalistas y accesibles
+- Secciones con altura completa del viewport (`100vh`)
+- Estructura modular con SCSS, Bootstrap y JavaScript ES14
+- Animaciones y transiciones suaves (AOS, SmoothScroll)
+- Preparado para internacionalización (multi-idioma)
 
+---
 
-### Bower
+## 🧩 Detalles del Theme
 
-Admite [bower](https://github.com/bower/bower) para instalar y administrar dependencias de JavaScript en la carpeta `assets/js/lib`.
+| Propiedad | Valor |
+|------------|--------|
+| **Theme Name** | GSAForce |
+| **Author** | [cmunozm](https://github.com/maxuber79) |
+| **Version** | 1.0.0 |
+| **Text Domain** | [gsaforce.com](https://gsaforce.com) |
+| **Contributors** | [webmain.cl](https://webmain.cl) |
+| **License** | GNU GPL v2 o posterior |
+| **Requiere** | JavaScript ES14, CSS3 |
+| **Etiquetas** | two-column, custom-menu, sidebar-menu, dashboard, translation-ready |
 
-### Deployment
-...
+---
 
-### Features
+## ⚙️ Estructura general
 
-1. Hoja de estilo normalizada para compatibilidad entre navegadores utilizando Normalize.css versión 3 (IE8+)
-2. Fácil de personalizar
-3. Cuadrícula flexible basada en el trabajo de [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-4. Las consultas de medios se pueden anidar en cada selector usando SASS/SCSS
-5. SCSS con muchos mixins listos para funcionar
-6. Mucho mucho más
+```
+gsaforce/
+ ├── assets/
+ │   ├── css/          # Estilos compilados
+ │   ├── scss/         # Fuentes SCSS
+ │   ├── js/           # Scripts principales
+ │   ├── lib/          # Librerías externas
+ │   └── images/       # Recursos gráficos e íconos
+ ├── guideline.html    # Guía visual del theme
+ └── index.html        # Página principal de demostración
+```
 
-### Suggested Plugins
-* No existen plugins asociados al proyecto, sólo librerias.
+---
 
+## 📦 Librerías y dependencias
 
-### libraries & dependencies
+| Librería | Versión | Descripción |
+|-----------|----------|-------------|
+| [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) | v5.3 | Framework CSS base |
+| [Bootstrap Icons](https://icons.getbootstrap.com/) | v1.11.3 | Iconografía SVG |
+| [jQuery](https://jquery.com/) | v3.7.1 | Librería JavaScript principal |
+| [jQuery Migrate](https://github.com/jquery/jquery-migrate) | v3.4.1 | Compatibilidad JS |
+| [SmoothScroll](https://cdnjs.com/libraries/smoothscroll) | v1.4.10 | Desplazamiento suave |
+| [AOS.js](https://michalsnik.github.io/aos/) | v2.3.1 | Animaciones on scroll |
+| [Normalize.css](https://necolas.github.io/normalize.css/) | v3 | Compatibilidad entre navegadores |
 
-Sin las siguiente librerias, el theme inicial HTML no podría operar.
+---
 
-* [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-* [Bootstrap icons](https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css)
-* [Jquery v3.7](https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?ver=3.7.1)
-* [Jquery migrate v3.4.1](https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js?ver=3.4.1)
-* [Smooth scroll v1.4.10](https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?ver=1.4.10)
-* [AOSjs v2.3](http://localhost/elev/wp-content/themes/elev/assets/lib/aos/aos.js?ver=2.3.1)
- 
+## ⚒️ Herramientas recomendadas
 
-¡Buena suerte ✌️!
- 
+- [Bower](https://github.com/bower/bower) para instalación de dependencias JS
+- [Autoprefixer](https://github.com/postcss/autoprefixer) para compatibilidad CSS
+- [BrowserSync](https://browsersync.io/) para sincronizar cambios locales en tiempo real
+
+---
+
+## 🚀 Cómo usarlo
+
+1. Clona el repositorio:
+	 ```bash
+	 git clone https://github.com/maxuber79/gsaforce.git
+	 ```
+2. Abre `index.html` o `guideline.html` en tu navegador.
+3. Modifica los archivos SCSS y ejecuta tu preprocesador favorito (Dart Sass, Prepros, etc.).
+4. Personaliza menús, logos e íconos desde `/assets/scss/components/`.
+
+---
+
+## 🧠 Autor
+
+**cmunozm (Claudio)**  
+📍 Chile  
+🌐 [webmain.cl](https://webmain.cl)  
+🐙 [github.com/maxuber79](https://github.com/maxuber79)
+
+---
+
+<div align="center">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Html5_logo_and_wordmark.svg" width="80">
+	<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="70">
+	<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="70">
+	<br><br>
+	<b>✨ GSAForce — HTML Theme moderno, limpio y adaptable ✨</b>
+</div>
